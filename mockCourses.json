@@ -1,0 +1,17 @@
+{
+  "courses":[
+    {
+        "courseName": "Основы Python",
+        "descriptionList":["Раздел 1: Введение в Python","Раздел 2: Основные конструкции","Раздел 3: Работа со списками и словарями","Раздел 4: Объектно-ориентированное программирование"],
+        "documentList": ["python_intro.pdf","python_basics.pdf", "lists_dicts.pdf", "oop_python.pdf"],
+        "videoList": ["https://www.youtube.com/embed/_uQrJ0TkZlc","https://www.youtube.com/embed/rfscVS0vtbw","https://www.youtube.com/embed/N4mEzFDjqtA", "https://www.youtube.com/embed/MOaZrj96RjM"],
+        "courseId": 1
+    },
+    {
+        "descriptionList":["description1","description2","description3"],
+        "documentList": ["document1","document2"],
+        "videoList": ["video1","video2"],
+        "courseId": 2
+    }
+  ]
+}

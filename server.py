@@ -1,6 +1,6 @@
 from flask_socketio import SocketIO
 
-from flask import Flask, Response
+from flask import Flask, Response, jsonify
 from flask_cors import CORS
 import json
 import os
@@ -45,5 +45,40 @@ def get_courses():
             mimetype='application/json; charset=utf-8'
         )
 
+
+def get_course(course_Id):
+    file_path = os.path.join(os.path.dirname(__file__), 'mockCourses.json')
+
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            courses = data.get('courses', [])
+
+            for course in courses:
+                if isinstance(course, dict) and course.get('courseId') == course_Id:
+                    return course
+            return None
+
+    except FileNotFoundError:
+        return {"error": "Файл с курсами не найден"}, 500
+    except json.JSONDecodeError:
+        return {"error": "Ошибка формата данных курсов"}, 500
+
+
+@app.route('/course/<int:course_Id>', methods=['GET'])
+def course_api(course_Id):
+    result = get_course(course_Id)
+
+    if result:
+        return Response(
+            json.dumps(result),
+            status=200,
+            mimetype='application/json; charset=utf-8'
+        )
+    else:
+        return jsonify({
+            "status": "error",
+            "message": f"Курс с ID {course_Id} не найден"
+        }), 404
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4343, debug=True)
