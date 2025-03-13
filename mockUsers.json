@@ -1,0 +1,14 @@
+{
+  "users":
+  [{
+    "isAuth": true,
+    "name": "Алексей",
+    "surname": "Сухоруков",
+    "middlename": "Геннадьевич",
+    "interests": "Big data, machine learning",
+    "email": "test@mail.ru",
+    "photoUrl": "",
+    "progress": [],
+    "userId": 1
+  }]
+}

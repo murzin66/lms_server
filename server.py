@@ -80,5 +80,74 @@ def course_api(course_Id):
             "status": "error",
             "message": f"Курс с ID {course_Id} не найден"
         }), 404
+
+def get_progress(userId):
+    file_path = os.path.join(os.path.dirname(__file__), 'mockProgress.json')
+    result = []
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            for prog in data:
+                if isinstance(prog, dict) and prog.get('userId') == userId:
+                    return prog.get('progress')
+                return None
+
+
+    except FileNotFoundError:
+        return {"error": "Файл с курсами не найден"}, 500
+    except json.JSONDecodeError:
+        return {"error": "Ошибка формата данных курсов"}, 500
+
+
+@app.route('/progress/<int:userId>', methods = ['GET'])
+def progress_api(userId):
+    result = get_progress(userId)
+    if result:
+        return Response(
+            json.dumps(result),
+            status = 200,
+            mimetype="application/json; charset = utf-8"
+        )
+    else:
+        return jsonify({
+            "status": "error",
+            "message": f"Прогресс для пользователя с ID {userId} не найден"
+        }), 404
+
+
+def get_userInfo(userEmail):
+    file_path = os.path.join(os.path.dirname(__file__), 'mockUsers.json')
+    result = []
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file).get('users')
+            for user in data:
+                if isinstance(user, dict) and user.get('email') == userEmail:
+                    return user
+                return None
+
+
+    except FileNotFoundError:
+        return {"error": "Файл с курсами не найден"}, 500
+    except json.JSONDecodeError:
+        return {"error": "Ошибка формата данных курсов"}, 500
+
+
+@app.route('/user/<string:userEmail>', methods=['GET'])
+def userInfo_api(userEmail):
+    result = get_userInfo(userEmail)
+    if result:
+        return Response(
+            json.dumps(result),
+            status=200,
+            mimetype="application/json; charset = utf-8"
+        )
+    else:
+        return jsonify({
+            "status": "error",
+            "message": f"Информация о пользователе с email: {userEmail} не найдена"
+        }), 404
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4343, debug=True)
