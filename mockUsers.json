@@ -9,6 +9,27 @@
     "email": "test@mail.ru",
     "photoUrl": "",
     "progress": [],
-    "userId": 1
+    "userId": 1,
+    "enrolledCourses": [1,2],
+    "recommendations": [
+      {
+        "title": "Машинное обучение",
+        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png",
+        "description": "Изучите основы машинного обучения, работу с нейросетями и анализ данных.",
+        "courseId":1
+      },
+      {
+        "title": "Веб-разработка",
+        "imageUrl": "https://i.imgur.com/l8lJZuJ.png",
+        "description": "Научитесь создавать современные веб-приложения с HTML, CSS и JavaScript.",
+        "courseId": 2
+      },
+      {
+        "title": "Основы Docker",
+        "imageUrl": "https://i.imgur.com/veeZGXF.png",
+        "description": "Изучите основы контейнеризации",
+        "courseId": 3
+      }
+    ]
   }]
 }

@@ -8,6 +8,7 @@
         "courseId": 1
     },
     {
+        "courseName": "Машинное обучение",
         "descriptionList":["description1","description2","description3"],
         "documentList": ["document1","document2"],
         "videoList": ["video1","video2"],

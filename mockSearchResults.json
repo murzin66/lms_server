@@ -1,0 +1,17 @@
+[
+  {
+  "title": "Первый курс",
+  "description":"Описание 1",
+  "id":1,
+  "rating":4,
+  "difficulty":10,
+  "modules":["модуль 1", "модуль 2"]
+},
+{
+  "title": "Второй курс",
+  "description":"Описание 2",
+  "id":2,
+  "rating":5,
+  "difficulty":50,
+  "modules":["модуль1", "модуль 2"]
+}]

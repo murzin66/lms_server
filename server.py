@@ -148,6 +148,34 @@ def userInfo_api(userEmail):
             "message": f"Информация о пользователе с email: {userEmail} не найдена"
         }), 404
 
+def getSearchResults(query):
+    file_path = os.path.join(os.path.dirname(__file__), 'mockSearchResults.json')
+    result = []
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        return data
+
+    except FileNotFoundError:
+        return {"error": "Файл с курсами не найден"}, 500
+    except json.JSONDecodeError:
+        return {"error": "Ошибка формата данных курсов"}, 500
+
+@app.route('/search/<string:query>', methods=['GET'])
+def search_api(query):
+    result = getSearchResults(query)
+    if result:
+        return Response(
+            json.dumps(result),
+            status=200,
+            mimetype="application/json; charset = utf-8"
+        )
+    else:
+        return jsonify({
+            "status": "error",
+            "message": f"Информация о {query} не найдена"
+        }), 404
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4343, debug=True)
