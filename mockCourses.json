@@ -8,11 +8,70 @@
         "courseId": 1
     },
     {
-        "courseName": "Машинное обучение",
-        "descriptionList":["description1","description2","description3"],
-        "documentList": ["document1","document2"],
-        "videoList": ["video1","video2"],
+        "courseName": "Веб-разработка на JavaScript",
+        "descriptionList": [
+            "Раздел 1: Основы HTML/CSS",
+            "Раздел 2: JavaScript для начинающих",
+            "Раздел 3: Работа с DOM и событиями",
+            "Раздел 4: Современный ES6+"
+        ],
+        "documentList": [
+            "web_basics.pdf",
+            "js_fundamentals.pdf",
+            "dom_manipulation.pdf",
+            "es6_features.pdf"
+        ],
+        "videoList": [
+            "https://www.youtube.com/embed/HD13eq_Pmp8",
+            "https://www.youtube.com/embed/W6NZfCO5SIk",
+            "https://www.youtube.com/embed/0SyTDZB8U5U",
+            "https://www.youtube.com/embed/NCwa_xi0Uuc"
+        ],
         "courseId": 2
+    },
+    {
+        "courseName": "Анализ данных с Pandas",
+        "descriptionList": [
+            "Раздел 1: Введение в анализ данных",
+            "Раздел 2: Основы Pandas",
+            "Раздел 3: Визуализация данных",
+            "Раздел 4: Работа с временными рядами"
+        ],
+        "documentList": [
+            "data_analysis_intro.pdf",
+            "pandas_guide.pdf",
+            "data_visualization.pdf",
+            "time_series.pdf"
+        ],
+        "videoList": [
+            "https://www.youtube.com/embed/r-uOLxNrNk8",
+            "https://www.youtube.com/embed/zmdjNSmRXF4",
+            "https://www.youtube.com/embed/0Xigc3u8v-U",
+            "https://www.youtube.com/embed/0s_1IsROgDc"
+        ],
+        "courseId": 3
+    },
+    {
+        "courseName": "Основы Docker",
+        "descriptionList": [
+            "Раздел 1: Введение в контейнеризацию",
+            "Раздел 2: Создание Docker-образов",
+            "Раздел 3: Оркестрация контейнеров",
+            "Раздел 4: Docker в production"
+        ],
+        "documentList": [
+            "docker_intro.pdf",
+            "docker_images.pdf",
+            "container_orchestration.pdf",
+            "production_ready.pdf"
+        ],
+        "videoList": [
+            "https://www.youtube.com/embed/fqMOX6JJhGo",
+            "https://www.youtube.com/embed/JprTjTViaEA",
+            "https://www.youtube.com/embed/XnBbIj6gxpk",
+            "https://www.youtube.com/embed/kTp5xUtg1Qk"
+        ],
+        "courseId": 4
     }
   ]
 }
