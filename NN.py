@@ -1,50 +1,61 @@
 import torch
-import pandas as pd
 import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.model_selection import train_test_split
 from torch_geometric.data import Data
 from torch_geometric.nn import GATConv
-import torch.nn.functional as F
 import joblib
 
-# 1. Загрузка тестовых данных
-# Предположим, что у вас есть DataFrame с тестовыми данными
-df_test = pd.read_csv('new_students_interests.csv')  # Замените на путь к вашему CSV-файлу
-df_test.dropna(subset=['Описание интересов студента'], inplace=True)
+# 1. Загрузка и предобработка данных
+df = pd.read_csv('students_interests.csv')  # Замените на путь к вашему CSV-файлу
+df.dropna(subset=['Описание интересов студента'], inplace=True)
 
-# 2. Загрузка сохранённого векторизатора
-vectorizer = joblib.load('vectorizer.pkl')
+# Токенизация и векторизация интересов студентов
+vectorizer = TfidfVectorizer()
+X = vectorizer.fit_transform(df['Описание интересов студента']).toarray()
 
-# 3. Векторизация тестовых данных
-X_test = vectorizer.transform(df_test['Описание интересов студента']).toarray()
+# Сохранение параметров векторайзера
+vectorizer_params = vectorizer.get_params()
 
-# 4. Построение графа на основе косинусного сходства
-cosine_sim = cosine_similarity(X_test, X_test)
+# Преобразование классов в числовой формат
+classes = df['Класс'].unique()
+class_map = {cls: idx for idx, cls in enumerate(classes)}
+y = np.array([class_map[cls] for cls in df['Класс']])
+
+# 2. Построение графа на основе косинусного сходства
+from sklearn.metrics.pairwise import cosine_similarity
+cosine_sim = cosine_similarity(X, X)
 edges = []
-threshold = 0.3  # Пониженный порог схожести
-n = len(df_test)
+threshold = 0.5  # Порог схожести
+n = len(df)
 for i in range(n):
     for j in range(i + 1, n):
         if cosine_sim[i, j] > threshold:
             edges.append([i, j])
-
-# Check if no edges are found
-if len(edges) == 0:
-    print("No edges found based on cosine similarity.")
-    # Handle the case where no edges are found, e.g., fallback or skip prediction
-else:
-    print(f"Found {len(edges)} edges.")
-
 edges = torch.tensor(edges, dtype=torch.long).t().contiguous()
 
-# 5. Создание объекта Data для PyTorch Geometric
-x = torch.tensor(X_test, dtype=torch.float)
-edge_index = edges if edges.size(1) > 0 else torch.empty(2, 0, dtype=torch.long)  # Fallback if no edges
-data = Data(x=x, edge_index=edge_index)
+# 3. Создание объекта Data для PyTorch Geometric
+x = torch.tensor(X, dtype=torch.float)
+edge_index = edges
+y = torch.tensor(y, dtype=torch.long)
+data = Data(x=x, edge_index=edge_index, y=y)
 
-# 6. Определение модели GAT
+# Разделение данных на обучающую и тестовую выборки
+num_nodes = len(y)
+indices = np.arange(num_nodes)
+train_indices, test_indices = train_test_split(indices, test_size=0.2, stratify=y, random_state=42)
+train_mask = torch.zeros(num_nodes, dtype=torch.bool)
+test_mask = torch.zeros(num_nodes, dtype=torch.bool)
+train_mask[train_indices] = True
+test_mask[test_indices] = True
+data.train_mask = train_mask
+data.test_mask = test_mask
+
+# 4. Определение модели GAT
 class GAT(nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels, heads=8, dropout=0.5):
         super(GAT, self).__init__()
@@ -59,29 +70,43 @@ class GAT(nn.Module):
         x = self.conv2(x, edge_index)
         return F.log_softmax(x, dim=1)
 
-# 7. Инициализация модели и загрузка сохранённых весов
+# Определение устройства
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = GAT(in_channels=X_test.shape[1], hidden_channels=8, out_channels=8, heads=8, dropout=0.5).to(device)
-model.load_state_dict(torch.load('model_weights.pth'), strict=False)
-model.eval()
 
-# 8. Предсказание классов для тестовых данных
+# 5. Инициализация модели, оптимизатора и функции потерь
+model = GAT(in_channels=X.shape[1], hidden_channels=8, out_channels=len(classes), heads=8, dropout=0.5).to(device)
 data = data.to(device)
-with torch.no_grad():
+optimizer = optim.Adam(model.parameters(), lr=0.005, weight_decay=5e-4)
+criterion = nn.NLLLoss()
+
+# 6. Функции для обучения и оценки модели
+def train_epoch(model, data, optimizer, criterion):
+    model.train()
+    optimizer.zero_grad()
+    out = model(data)
+    loss = criterion(out[data.train_mask], data.y[data.train_mask])
+    loss.backward()
+    optimizer.step()
+    return loss.item()
+
+def evaluate(model, data):
+    model.eval()
     out = model(data)
     pred = out.argmax(dim=1)
+    correct_train = (pred[data.train_mask] == data.y[data.train_mask]).sum().item()
+    correct_test = (pred[data.test_mask] == data.y[data.test_mask]).sum().item()
+    train_acc = correct_train / data.train_mask.sum().item()
+    test_acc = correct_test / data.test_mask.sum().item()
+    return train_acc, test_acc
 
-class_mapping = {
-    0: 'DevOps',
-    1: 'Web',
-    2: 'ML',
-    3: 'Software',
-    4: 'Art',
-    5: 'Biology',
-    6: 'Physics',
-    7: 'Math'
-}
-predicted_classes = [class_mapping[int(label)] for label in pred]
+# 7. Обучение модели
+epochs = 80
+for epoch in range(epochs):
+    loss = train_epoch(model, data, optimizer, criterion)
+    train_acc, test_acc = evaluate(model, data)
+    if (epoch + 1) % 10 == 0:
+        print(f'Epoch: {epoch+1:03d}, Loss: {loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}')
 
-# 9. Вывод предсказанных классов
-print(predicted_classes)
+# 8. Сохранение параметров модели и параметров векторайзера
+torch.save(model.state_dict(), 'model_weights.pth')
+joblib.dump(vectorizer_params, 'vectorizer_params.pkl')
