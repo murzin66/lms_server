@@ -88,16 +88,13 @@ def course_api(course_Id):
 
 def get_progress(userId):
     file_path = os.path.join(os.path.dirname(__file__), 'mockProgress.json')
-    result = []
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
             for prog in data:
                 if isinstance(prog, dict) and prog.get('userId') == userId:
                     return prog.get('progress')
-                return None
-
-
+        return None
     except FileNotFoundError:
         return {"error": "Файл с курсами не найден"}, 500
     except json.JSONDecodeError:
@@ -129,7 +126,7 @@ def get_userInfo(userEmail):
                 if isinstance(user, dict) and user.get('email') == userEmail:
                     #print (user)
                     return user
-                return {"error": "Пользователь не найден"}, 404
+        return {"error": "Пользователь не найден"}, 404
 
 
     except FileNotFoundError:
@@ -141,7 +138,7 @@ def get_userInfo(userEmail):
 @app.route('/user/<string:userEmail>', methods=['GET'])
 def userInfo_api(userEmail):
     result = get_userInfo(userEmail)
-    print (result)
+    #print (result)
     if result:
         return Response(
             json.dumps(result),
@@ -184,17 +181,29 @@ def search_api(query):
 
 def searchForToken(token):
     file_path = os.path.join(os.path.dirname(__file__), 'mockUsers.json')
-    result = []
-    m = hashlib.sha256()
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
-            data = json.load(file).get('users')
-            for user in data:
-                encoded_text = user.get('email').encode("utf-8")
-                m.update(encoded_text)
-                if isinstance(user, dict) and m.hexdigest() == token:
-                    return user
-                return None
+            users = json.load(file).get('users', [])
+            for user in users:
+                email = user.get('email')
+                if email:
+                    m = hashlib.sha256()
+                    encoded_text = email.encode("utf-8")
+                    m.update(encoded_text)
+                    computed_token = m.hexdigest()
+                    #print(f'Email из словаря: {email}')
+                    #print(f'Вычисленный токен: {computed_token}')
+                    if computed_token == token:
+                        #print('пользователь найден!!!')
+                        return user
+
+        return None
+    except FileNotFoundError:
+        print(f"Файл {file_path} не найден.")
+        return None
+    except json.JSONDecodeError:
+        print(f"Ошибка декодирования JSON в файле {file_path}.")
+        return None
 
 
     except FileNotFoundError:
@@ -218,11 +227,16 @@ def checkAuth_api (token):
         }), 404
 
 def checkLogin(email, password):
+    #print (email)
+    #print (password)
     m = hashlib.sha256()
     encoded_text = email.encode("utf-8")
     m.update(encoded_text)
     user = searchForToken(m.hexdigest())
+    #print(f'initial token:{m.hexdigest()}')
+    #print (user)
     if user.get('password') == password:
+        #print ('login correct')
         return jsonify({
             "email": email,
             "token": m.hexdigest(),
@@ -317,7 +331,7 @@ def changeUserInfoApi():
         }), 400
 
 
-def changeEnrolledCourses(email, courseId):
+def changeEnrolledCourses(email, courseId, courseTag):
     with open('mockUsers.json', 'r+', encoding='utf-8') as file:
         data = json.load(file)
         updated_user = None
@@ -325,10 +339,12 @@ def changeEnrolledCourses(email, courseId):
         for user in data['users']:
             if user['email'] == email:
                 enrolled_courses = user.get('enrolledCourses', [])
-
+                usersTags = user.get('recommendationTags',[])
                 if courseId not in enrolled_courses:
                     enrolled_courses.append(courseId)
 
+                usersTags.append(courseTag)
+                user['recommendationTags'] = usersTags
                 user['enrolledCourses'] = enrolled_courses
 
                 updated_user = user.copy()
@@ -348,8 +364,9 @@ def changeEnrolledCourses_api():
     data = request.get_json()
     email = data.get('email')
     courseId = data.get('courseId')
-    result = changeEnrolledCourses(email, courseId)
-    print (result)
+    courseTag = data.get('courseTag')
+    result = changeEnrolledCourses(email, courseId, courseTag)
+    #print (result)
     if result:
         return Response(
             result,
@@ -363,6 +380,84 @@ def changeEnrolledCourses_api():
         }), 400
 
 
+def writeNewUser(email, password, interests, name, surname, middlename):
+    file_path = 'mockUsers.json'
+
+    if not os.path.exists(file_path) or os.stat(file_path).st_size == 0:
+        data = {'users': []}
+    else:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+
+    for user in data['users']:
+        if user['email'] == email:
+            return {
+                "status": "error",
+                "message": "Данный пользователь уже существует"
+            }, 400
+
+    new_user = {
+        'email': email,
+        "isAuth": True,
+        "name": name,
+        "surname": surname,
+        "middlename": middlename,
+        "interests": interests,
+        "password": password,
+        "photoUrl": "/static/media/profile-photo.0f5a698bf61867a60666.jpg",
+        "progress": [],
+        "userId": len(data['users']) + 1,
+        "enrolledCourses": [],
+        "recommendations": []
+    }
+    data['users'].append(new_user)
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+
+    progress_file_path = 'mockProgress.json'
+    if not os.path.exists(progress_file_path) or os.stat(progress_file_path).st_size == 0:
+        progress_data = []
+    else:
+        with open(progress_file_path, 'r', encoding='utf-8') as file:
+            progress_data = json.load(file)
+
+        # Добавление пустого прогресса для нового пользователя
+    new_progress = {
+        "userId": len(data['users']) + 1,
+        "progress": []
+    }
+    progress_data.append(new_progress)
+
+    # Сохранение обновленных данных прогресса
+    with open(progress_file_path, 'w', encoding='utf-8') as file:
+        json.dump(progress_data, file, ensure_ascii=False, indent=4)
+
+    m = hashlib.sha256()
+    encoded_text = email.encode("utf-8")
+    m.update(encoded_text)
+
+    return jsonify({
+        "email": email,
+        "token": m.hexdigest(),
+        "id": len(data['users']) + 1
+    })
+
+
+@app.route('/register', methods=['POST'])
+def register_api():
+    data = request.get_json()
+    required_fields = ['email', 'password', 'interests', 'name', 'surname', 'middlename']
+
+    email = data['email']
+    password = data['password']
+    interests = data['interests']
+    name = data['name']
+    surname = data['surname']
+    middlename = data['middlename']
+    #print (f'predicted class for new user: {predict(interests)}')
+    # Вызываем функцию для добавления нового пользователя
+    result = writeNewUser(email, password, interests, name, surname, middlename)
+    return result
 
 # Разворачивание обученной модели графовой нейросети
 class GAT(torch.nn.Module):

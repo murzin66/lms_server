@@ -5,42 +5,59 @@
         "description": "Изучите основы программирования на Python.",
         "rating": 4,
         "difficulty": 20,
-        "id":1
+        "id":1,
+        "courseTag": "DevOps",
+        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
+
     },
     {
         "title":"Машинное обучение",
         "description": "Погрузитесь в мир машинного обучения и нейронных сетей.",
         "rating": 5,
         "difficulty": 40,
-        "id":2
+        "id":2,
+        "courseTag": "ML",
+        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png"
+
     },
     {
         "title":"Веб-разработка",
         "description": "Создавайте современные веб-приложения с использованием React и Django.",
         "rating": 3,
         "difficulty": 30,
-        "id":3
+        "id":3,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
     },
     {
         "title":"Базы данных",
         "description": "Изучите основы работы с реляционными и NoSQL базами данных.",
         "rating": 4,
         "difficulty": 25,
-        "id":4
+        "id":4,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
+
     },
     {
         "title":"DevOps",
         "description": "Освойте инструменты для автоматизации разработки и развертывания.",
         "rating": 5,
         "difficulty": 35,
-        "id":5
+        "id":5,
+        "courseTag": "DevOps",
+        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png"
+
     },
     {
         "title":"Алгоритмы и структуры данных",
         "description": "Изучите основные алгоритмы и структуры данных для эффективного программирования.",
         "rating": 5,
         "difficulty": 50,
-        "id":6
+        "id":6,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
+
     }
   ]
 }

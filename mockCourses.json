@@ -5,7 +5,8 @@
         "descriptionList":["Раздел 1: Введение в Python","Раздел 2: Основные конструкции","Раздел 3: Работа со списками и словарями","Раздел 4: Объектно-ориентированное программирование"],
         "documentList": ["python_intro.pdf","python_basics.pdf", "lists_dicts.pdf", "oop_python.pdf"],
         "videoList": ["https://www.youtube.com/embed/_uQrJ0TkZlc","https://www.youtube.com/embed/rfscVS0vtbw","https://www.youtube.com/embed/N4mEzFDjqtA", "https://www.youtube.com/embed/MOaZrj96RjM"],
-        "courseId": 1
+        "courseId": 1,
+        "courseTag": "DevOps"
     },
     {
         "courseName": "Веб-разработка на JavaScript",
@@ -27,7 +28,8 @@
             "https://www.youtube.com/embed/0SyTDZB8U5U",
             "https://www.youtube.com/embed/NCwa_xi0Uuc"
         ],
-        "courseId": 2
+        "courseId": 2,
+        "courseTag": "Web"
     },
     {
         "courseName": "Анализ данных с Pandas",
@@ -49,7 +51,9 @@
             "https://www.youtube.com/embed/0Xigc3u8v-U",
             "https://www.youtube.com/embed/0s_1IsROgDc"
         ],
-        "courseId": 3
+        "courseId": 3,
+        "courseTag": "ML"
+
     },
     {
         "courseName": "Основы Docker",
@@ -71,7 +75,8 @@
             "https://www.youtube.com/embed/XnBbIj6gxpk",
             "https://www.youtube.com/embed/kTp5xUtg1Qk"
         ],
-        "courseId": 4
+        "courseId": 4,
+        "courseTag": "DevOps"
     }
   ]
 }

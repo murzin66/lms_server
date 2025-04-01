@@ -1,16 +1,56 @@
 [
-  {
-    "userId": 1,
-    "progress": [
-      {
-
-        "CourseName": "Основы Python",
-        "moduleProgress": [20,60,80,10]
-      },
-      {
-      "CourseName": "Docker basics",
-      "moduleProgress": [80,60,70,100]
+    {
+        "userId": 1,
+        "progress": [
+            {
+                "CourseName": "Основы Python",
+                "moduleProgress": [
+                    20,
+                    60,
+                    80,
+                    10
+                ]
+            },
+            {
+                "CourseName": "Docker basics",
+                "moduleProgress": [
+                    80,
+                    60,
+                    70,
+                    100
+                ]
+            }
+        ]
+    },
+    {
+        "userId": 2,
+        "progress": [
+            {
+                "CourseName": "Основы Python",
+                "moduleProgress": [
+                    20,
+                    60,
+                    80,
+                    10
+                ]
+            },
+            {
+                "CourseName": "Docker basics",
+                "moduleProgress": [
+                    80,
+                    60,
+                    70,
+                    100
+                ]
+            }
+        ]
+    },
+    {
+        "userId": 4,
+        "progress": []
+    },
+    {
+        "userId": 5,
+        "progress": []
     }
-  ]
-  }
 ]

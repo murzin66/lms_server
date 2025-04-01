@@ -14,8 +14,7 @@
             "enrolledCourses": [
                 1,
                 2,
-                3,
-                4
+                3
             ],
             "recommendations": [
                 {
@@ -36,6 +35,62 @@
                     "description": "Изучите основы контейнеризации",
                     "courseId": 3
                 }
+            ],
+            "recommendationTags": [
+                "DevOps",
+                "Web",
+                "Web"
+            ]
+        },
+        {
+            "isAuth": true,
+            "name": "Тест",
+            "surname": "Тест",
+            "middlename": "Тест",
+            "interests": "web",
+            "email": "testUser@gmail.com",
+            "password": "pwd",
+            "photoUrl": "/static/media/profile-photo.0f5a698bf61867a60666.jpg",
+            "progress": [],
+            "userId": 2,
+            "enrolledCourses": [],
+            "recommendations": [],
+            "recommendationTags": [
+                "DevOps"
+            ]
+        },
+        {
+            "email": "test2@mail.ru",
+            "isAuth": true,
+            "name": "Тест2",
+            "surname": "Тест2",
+            "middlename": "Тест2",
+            "interests": "web",
+            "password": "pwd",
+            "photoUrl": "/static/media/profile-photo.0f5a698bf61867a60666.jpg",
+            "progress": [],
+            "userId": 3,
+            "enrolledCourses": [],
+            "recommendations": [],
+            "recommendationTags": [
+                "ML"
+            ]
+        },
+        {
+            "email": "test3@mail.ru",
+            "isAuth": true,
+            "name": "Тест3",
+            "surname": "Тест3",
+            "middlename": "Тест3",
+            "interests": "я интересуюсь веб-разработкой, сайтами, интерфейсами",
+            "password": "pwd",
+            "photoUrl": "/static/media/profile-photo.0f5a698bf61867a60666.jpg",
+            "progress": [],
+            "userId": 4,
+            "enrolledCourses": [],
+            "recommendations": [],
+            "recommendationTags": [
+                "Software"
             ]
         }
     ]
