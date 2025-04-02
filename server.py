@@ -9,10 +9,30 @@ import torch
 import torch.nn.functional as F
 import joblib
 from torch_geometric.nn import GATConv
+import networkx as nx
+from sentence_transformers import SentenceTransformer, util
+import numpy as np
 
 app = Flask(__name__)
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
+
+search_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+
+def create_knowledge_graph_from_json(json_file):
+    with open(json_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    G = nx.Graph()
+    for course in data["courses"]:
+        course_name = course["courseName"]
+        descriptions = course["descriptionList"]
+        for desc in descriptions:
+            G.add_edge(course_name, desc)
+
+    return G, data["courses"]
+
+G, courses = create_knowledge_graph_from_json("mockCourses.json")
 
 @socketio.on('connect')
 def handle_connect():
@@ -153,12 +173,10 @@ def userInfo_api(userEmail):
 
 def getSearchResults(query):
     file_path = os.path.join(os.path.dirname(__file__), 'mockSearchResults.json')
-    result = []
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            data = json.load(file)
-        return data
-
+        result = semantic_search_courses(query, G, courses, search_model)
+        print (result)
+        return result
     except FileNotFoundError:
         return {"error": "Файл с курсами не найден"}, 500
     except json.JSONDecodeError:
@@ -166,7 +184,9 @@ def getSearchResults(query):
 
 @app.route('/search/<string:query>', methods=['GET'])
 def search_api(query):
+    print (query)
     result = getSearchResults(query)
+    print (result)
     if result:
         return Response(
             json.dumps(result),
@@ -519,5 +539,28 @@ def predict(description):
 
     return predicted_class
 
+
+# Система поиска
+
+
+def semantic_search_courses(query, graph, courses, model, threshold=0.4):
+    nodes = list(graph.nodes)
+    node_embeddings = model.encode(nodes, convert_to_tensor=True)
+    query_embedding = model.encode(query, convert_to_tensor=True)
+
+    similarities = util.pytorch_cos_sim(query_embedding, node_embeddings)[0].cpu().numpy()
+    sorted_indices = np.argsort(-similarities)
+
+    relevant_courses = []
+    for idx in sorted_indices:
+        if similarities[idx] < threshold:
+            break
+        node = nodes[idx]
+        for course in courses:
+            if (node == course["courseName"] or node in course["descriptionList"]) and course not in relevant_courses:
+                relevant_courses.append(course)
+
+    return relevant_courses
 if __name__ == "__main__":
+
     app.run(host='0.0.0.0', port=4343, debug=True)
