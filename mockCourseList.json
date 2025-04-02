@@ -1,63 +1,274 @@
 {
-  "courseList":[
+  "courseList": [
     {
-        "title":"Основы Python",
-        "description": "Изучите основы программирования на Python.",
-        "rating": 4,
-        "difficulty": 20,
-        "id":1,
-        "courseTag": "DevOps",
-        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
-
+      "title": "Основы Python",
+      "description": "Изучите основы Python, его синтаксис и ООП для начала программирования.",
+      "rating": 4,
+      "difficulty": 20,
+      "id": 1,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/f0Al9wk.jpg"
     },
     {
-        "title":"Машинное обучение",
-        "description": "Погрузитесь в мир машинного обучения и нейронных сетей.",
-        "rating": 5,
-        "difficulty": 40,
-        "id":2,
-        "courseTag": "ML",
-        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png"
-
+      "title": "Веб-разработка на JavaScript",
+      "description": "Создавайте динамичные веб-сайты с HTML, CSS и JavaScript.",
+      "rating": 4,
+      "difficulty": 30,
+      "id": 2,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/mjwNu9m.jpg"
     },
     {
-        "title":"Веб-разработка",
-        "description": "Создавайте современные веб-приложения с использованием React и Django.",
-        "rating": 3,
-        "difficulty": 30,
-        "id":3,
-        "courseTag": "Web",
-        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
+      "title": "Анализ данных с Pandas",
+      "description": "Изучите методы анализа и визуализации данных с помощью Pandas.",
+      "rating": 4,
+      "difficulty": 25,
+      "id": 3,
+      "courseTag": "ML",
+      "imageUrl": "https://i.imgur.com/hYNmga2.jpg"
     },
     {
-        "title":"Базы данных",
-        "description": "Изучите основы работы с реляционными и NoSQL базами данных.",
-        "rating": 4,
-        "difficulty": 25,
-        "id":4,
-        "courseTag": "Software",
-        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
-
+      "title": "Основы Docker",
+      "description": "Освойте Docker: контейнеризация, создание образов и управление контейнерами.",
+      "rating": 4,
+      "difficulty": 35,
+      "id": 4,
+      "courseTag": "DevOps",
+      "imageUrl": "https://i.imgur.com/20G2DYp.jpg"
     },
     {
-        "title":"DevOps",
-        "description": "Освойте инструменты для автоматизации разработки и развертывания.",
-        "rating": 5,
-        "difficulty": 35,
-        "id":5,
-        "courseTag": "DevOps",
-        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png"
-
+      "title": "Машинное обучение",
+      "description": "Погрузитесь в алгоритмы машинного обучения для практических задач.",
+      "rating": 5,
+      "difficulty": 40,
+      "id": 5,
+      "courseTag": "ML",
+      "imageUrl": "https://i.imgur.com/veeZGXF.jpg"
     },
     {
-        "title":"Алгоритмы и структуры данных",
-        "description": "Изучите основные алгоритмы и структуры данных для эффективного программирования.",
-        "rating": 5,
-        "difficulty": 50,
-        "id":6,
-        "courseTag": "Software",
-        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
-
+      "title": "React для начинающих",
+      "description": "Начните создавать одностраничные приложения с React и его компонентами.",
+      "rating": 4,
+      "difficulty": 30,
+      "id": 6,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/BsWeQUu.jpg"
+    },
+    {
+      "title": "Node.js API разработка",
+      "description": "Создавайте масштабируемые API с Node.js и Express.",
+      "rating": 4,
+      "difficulty": 35,
+      "id": 7,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/Y8m0xZ2.jpg"
+    },
+    {
+      "title": "Мобильная разработка с Flutter",
+      "description": "Создавайте кроссплатформенные мобильные приложения с Flutter.",
+      "rating": 5,
+      "difficulty": 40,
+      "id": 8,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/pKnbFoF.jpg"
+    },
+    {
+      "title": "Курс по DevOps",
+      "description": "Изучите основы DevOps, CI/CD и контейнеризацию для автоматизации разработки.",
+      "rating": 5,
+      "difficulty": 45,
+      "id": 9,
+      "courseTag": "DevOps",
+      "imageUrl": "https://i.imgur.com/7TDEyBp.jpg"
+    },
+    {
+      "title": "Алгоритмы и структуры данных на Python",
+      "description": "Углубитесь в алгоритмы и структуры данных с практическими примерами на Python.",
+      "rating": 5,
+      "difficulty": 50,
+      "id": 10,
+      "courseTag": "Math",
+      "imageUrl": "https://thumbs.dreamstime.com/b/%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC-%D0%B4%D0%B5%D0%BB%D0%BE-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-148919633.jpg"
+    },
+    {
+      "title": "Разработка игр с Unity",
+      "description": "Создавайте игры с использованием Unity и 2D/3D графики.",
+      "rating": 5,
+      "difficulty": 40,
+      "id": 11,
+      "courseTag": "Art",
+      "imageUrl": "https://i.imgur.com/6BiXsKt.jpg"
+    },
+    {
+      "title": "Введение в кибербезопасность",
+      "description": "Изучите основы кибербезопасности и методы защиты информации.",
+      "rating": 4,
+      "difficulty": 35,
+      "id": 12,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/5Cd4YSn.jpg"
+    },
+    {
+      "title": "SQL для начинающих",
+      "description": "Научитесь работать с реляционными базами данных с помощью SQL.",
+      "rating": 4,
+      "difficulty": 30,
+      "id": 13,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/zhO5eRL.jpg"
+    },
+    {
+      "title": "Введение в облачные технологии",
+      "description": "Изучите основы облачных вычислений и развертывания приложений.",
+      "rating": 5,
+      "difficulty": 40,
+      "id": 14,
+      "courseTag": "DevOps",
+      "imageUrl": "https://i.imgur.com/jK2utLM.jpg"
+    },
+    {
+      "title": "Angular для веб-разработки",
+      "description": "Создавайте динамичные веб-приложения с Angular и его компонентами.",
+      "rating": 4,
+      "difficulty": 35,
+      "id": 15,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/zN6IF6J.jpg"
+    },
+    {
+      "title": "Курс по Rust",
+      "description": "Научитесь программировать на Rust – современном и безопасном языке.",
+      "rating": 5,
+      "difficulty": 45,
+      "id": 16,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/tcB7Z5s.jpg"
+    },
+    {
+      "title": "Программирование на C#",
+      "description": "Изучите основы C# и разработку приложений на платформе .NET.",
+      "rating": 4,
+      "difficulty": 40,
+      "id": 17,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/NvtjCou.jpg"
+    },
+    {
+      "title": "Разработка на Java",
+      "description": "Углубитесь в объектно-ориентированное программирование на Java.",
+      "rating": 5,
+      "difficulty": 45,
+      "id": 18,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/WEHEvYE.jpg"
+    },
+    {
+      "title": "Основы Go",
+      "description": "Изучите язык Go для создания высокопроизводительных приложений.",
+      "rating": 4,
+      "difficulty": 40,
+      "id": 19,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/noWSm92.jpg"
+    },
+    {
+      "title": "Разработка микросервисов с Spring Boot",
+      "description": "Создавайте микросервисы с Spring Boot для масштабируемых приложений.",
+      "rating": 5,
+      "difficulty": 50,
+      "id": 20,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/2qBZrF9.jpg"
+    },
+    {
+      "title": "Искусственный интеллект",
+      "description": "Откройте возможности нейронных сетей и машинного обучения.",
+      "rating": 5,
+      "difficulty": 55,
+      "id": 21,
+      "courseTag": "ML",
+      "imageUrl": "https://i.imgur.com/veeZGXF.png"
+    },
+    {
+      "title": "NLP с Python",
+      "description": "Освойте методы обработки естественного языка с Python и NLTK.",
+      "rating": 4,
+      "difficulty": 45,
+      "id": 22,
+      "courseTag": "ML",
+      "imageUrl": "https://i.imgur.com/f0Al9wk.jpg"
+    },
+    {
+      "title": "Веб-разработка с Django",
+      "description": "Создавайте полнофункциональные веб-приложения с Django и базой данных.",
+      "rating": 5,
+      "difficulty": 40,
+      "id": 23,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/ZDcZoXj.jpg"
+    },
+    {
+      "title": "Курс по Ruby on Rails",
+      "description": "Научитесь создавать веб-приложения с Ruby on Rails и MVC архитектурой.",
+      "rating": 4,
+      "difficulty": 40,
+      "id": 24,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/DXNvMPF.jpg"
+    },
+    {
+      "title": "Курс по PHP",
+      "description": "Освойте PHP для создания динамичных веб-сайтов и работы с БД.",
+      "rating": 4,
+      "difficulty": 35,
+      "id": 25,
+      "courseTag": "Web",
+      "imageUrl": "https://i.imgur.com/OuZFvX2.jpg"
+    },
+    {
+      "title": "Введение в Kotlin",
+      "description": "Начните создавать Android-приложения на Kotlin.",
+      "rating": 4,
+      "difficulty": 40,
+      "id": 26,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/wGoOt53.jpg"
+    },
+    {
+      "title": "Swift для начинающих",
+      "description": "Разработайте приложения для iOS с использованием Swift.",
+      "rating": 4,
+      "difficulty": 40,
+      "id": 27,
+      "courseTag": "Software",
+      "imageUrl": "https://i.imgur.com/xU0FRWw.jpg"
+    },
+    {
+      "title": "Разработка AR/VR приложений",
+      "description": "Создавайте захватывающие AR и VR приложения с современными инструментами.",
+      "rating": 5,
+      "difficulty": 50,
+      "id": 28,
+      "courseTag": "Art",
+      "imageUrl": "https://i.imgur.com/pQPtW7K.jpg"
+    },
+    {
+      "title": "Блокчейн и криптовалюты",
+      "description": "Откройте технологии блокчейна и криптовалют для практических проектов.",
+      "rating": 5,
+      "difficulty": 45,
+      "id": 29,
+      "courseTag": "Software",
+      "imageUrl": "https://www.coresite.com/hubfs/Imported_Blog_Media/643d7058fcefba0729ab7de6_th-blockchain-use-cases-data-center.png"
+    },
+    {
+      "title": "Основы UI/UX дизайна",
+      "description": "Изучите принципы UI/UX для создания удобных интерфейсов.",
+      "rating": 5,
+      "difficulty": 40,
+      "id": 30,
+      "courseTag": "Art",
+      "imageUrl": "https://i.imgur.com/8oZjtk5.jpg"
     }
   ]
 }

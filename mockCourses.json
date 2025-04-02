@@ -1,127 +1,1174 @@
 {
-  "courses":[
+  "courses": [
     {
-        "courseName": "Основы Python",
-        "descriptionList":["Раздел 1: Введение в Python","Раздел 2: Основные конструкции","Раздел 3: Работа со списками и словарями","Раздел 4: Объектно-ориентированное программирование"],
-        "documentList": ["python_intro.pdf","python_basics.pdf", "lists_dicts.pdf", "oop_python.pdf"],
-        "videoList": ["https://www.youtube.com/embed/_uQrJ0TkZlc","https://www.youtube.com/embed/rfscVS0vtbw","https://www.youtube.com/embed/N4mEzFDjqtA", "https://www.youtube.com/embed/MOaZrj96RjM"],
-        "courseId": 1,
-        "courseTag": "DevOps",
-        "longDescription": "Этот курс предназначен для начинающих разработчиков, желающих освоить один из самых популярных языков программирования — Python. Вы изучите основы синтаксиса, структуры данных, работу с файлами и базами данных, а также основы объектно-ориентированного программирования. В ходе обучения будут рассмотрены реальные примеры использования Python в веб-разработке, анализе данных и автоматизации задач. После прохождения курса студенты смогут разрабатывать собственные проекты, работать с API и создавать автоматизированные решения.",
-        "competences": ["Понимание синтаксиса и структур данных в Python","Работа с файлами и базами данных","Создание программ с использованием объектно-ориентированного подхода","Основы работы с API и автоматизация процессов","Разработка простых веб-приложений на Python"],
-
-        "shortInfo": {
-        "title":"Основы Python",
-        "description": "Изучите основы программирования на Python.",
+      "courseName": "Основы Python",
+      "descriptionList": [
+        "Раздел 1: Введение в Python",
+        "Раздел 2: Основные конструкции",
+        "Раздел 3: Работа со списками и словарями",
+        "Раздел 4: Объектно-ориентированное программирование"
+      ],
+      "documentList": [
+        "https://altaev-aa.narod.ru/Python/python-vvedenie_v_programmirovanie.pdf",
+        "https://elar.urfu.ru/bitstream/10995/28769/1/978-5-7996-1198-9_2014.pdf",
+        "https://python.inr.ru/s1903.pdf",
+        "https://matematika-mipa.unsri.ac.id/wp-content/uploads/2022/05/Object-Oriented-Python-Master-OOP-by-Building-Games-and-GUIs-Irv-Kalb-z-lib.org_.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/rfscVS0vtbw",
+        "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "https://www.youtube.com/embed/YYXdXT2l-Gg",
+        "https://www.youtube.com/embed/kqtD5dpn9C8"
+      ],
+      "courseId": 1,
+      "courseTag": "Software",
+      "longDescription": "Курс для начинающих разработчиков, охватывающий основы Python, синтаксис, структуры данных, работу с файлами и ООП.",
+      "competences": [
+        "Синтаксис Python",
+        "Работа со списками и словарями",
+        "ООП",
+        "Обработка ошибок"
+      ],
+      "shortInfo": {
+        "title": "Основы Python",
+        "description": "Изучите базовый синтаксис и основы программирования на Python.",
         "rating": 4,
         "difficulty": 20,
-        "id":1,
-        "courseTag": "DevOps",
-        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
-        }
+        "id": 1,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/f0Al9wk.jpg"
+      }
     },
     {
-        "courseName": "Веб-разработка на JavaScript",
-        "descriptionList": [
-            "Раздел 1: Основы HTML/CSS",
-            "Раздел 2: JavaScript для начинающих",
-            "Раздел 3: Работа с DOM и событиями",
-            "Раздел 4: Современный ES6+"
-        ],
-        "documentList": [
-            "web_basics.pdf",
-            "js_fundamentals.pdf",
-            "dom_manipulation.pdf",
-            "es6_features.pdf"
-        ],
-        "videoList": [
-            "https://www.youtube.com/embed/HD13eq_Pmp8",
-            "https://www.youtube.com/embed/W6NZfCO5SIk",
-            "https://www.youtube.com/embed/0SyTDZB8U5U",
-            "https://www.youtube.com/embed/NCwa_xi0Uuc"
-        ],
-        "longDescription": "Этот курс предназначен для начинающих разработчиков, желающих освоить один из самых популярных языков программирования — Python. Вы изучите основы синтаксиса, структуры данных, работу с файлами и базами данных, а также основы объектно-ориентированного программирования. В ходе обучения будут рассмотрены реальные примеры использования Python в веб-разработке, анализе данных и автоматизации задач. После прохождения курса студенты смогут разрабатывать собственные проекты, работать с API и создавать автоматизированные решения.",
-        "competences": ["Понимание синтаксиса и структур данных в Python","Работа с файлами и базами данных","Создание программ с использованием объектно-ориентированного подхода","Основы работы с API и автоматизация процессов","Разработка простых веб-приложений на Python"],
-        "courseId": 2,
-        "courseTag": "Web",
-        "shortInfo": {
-        "title":"Веб-разработка",
-        "description": "Создавайте современные веб-приложения с использованием React и Django.",
-        "rating": 3,
+      "courseName": "Веб-разработка на JavaScript",
+      "descriptionList": [
+        "Раздел 1: Основы HTML/CSS",
+        "Раздел 2: JavaScript для начинающих",
+        "Раздел 3: Работа с DOM",
+        "Раздел 4: Современный ES6+"
+      ],
+      "documentList": [
+        "html_css_basics.pdf",
+        "js_fundamentals.pdf",
+        "dom_manipulation.pdf",
+        "es6_guide.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/PkZNo7MFNFg",
+        "https://www.youtube.com/embed/hdI2bqOjy3c",
+        "https://www.youtube.com/embed/NCwa_xi0Uuc",
+        "https://www.youtube.com/embed/Fdf5aTYRW0Y"
+      ],
+      "courseId": 2,
+      "courseTag": "Web",
+      "longDescription": "Курс охватывает основы веб-разработки с использованием HTML, CSS и JavaScript, а также современные возможности языка.",
+      "competences": [
+        "HTML и CSS",
+        "Основы JavaScript",
+        "Работа с DOM",
+        "ES6+"
+      ],
+      "shortInfo": {
+        "title": "Веб-разработка на JavaScript",
+        "description": "Создавайте интерактивные веб-сайты с современными технологиями.",
+        "rating": 4,
         "difficulty": 30,
-        "id":2,
+        "id": 2,
         "courseTag": "Web",
-        "imageUrl": "https://i.imgur.com/l8lJZuJ.png"
-
-        }
+        "imageUrl": "https://i.imgur.com/mjwNu9m.jpg"
+      }
     },
     {
-        "courseName": "Анализ данных с Pandas",
-        "descriptionList": [
-            "Раздел 1: Введение в анализ данных",
-            "Раздел 2: Основы Pandas",
-            "Раздел 3: Визуализация данных",
-            "Раздел 4: Работа с временными рядами"
-        ],
-        "documentList": [
-            "data_analysis_intro.pdf",
-            "pandas_guide.pdf",
-            "data_visualization.pdf",
-            "time_series.pdf"
-        ],
-        "videoList": [
-            "https://www.youtube.com/embed/r-uOLxNrNk8",
-            "https://www.youtube.com/embed/zmdjNSmRXF4",
-            "https://www.youtube.com/embed/0Xigc3u8v-U",
-            "https://www.youtube.com/embed/0s_1IsROgDc"
-        ],
-        "courseId": 3,
+      "courseName": "Анализ данных с Pandas",
+      "descriptionList": [
+        "Раздел 1: Введение в анализ данных",
+        "Раздел 2: Основы Pandas",
+        "Раздел 3: Визуализация данных",
+        "Раздел 4: Работа с временными рядами"
+      ],
+      "documentList": [
+        "data_analysis_intro.pdf",
+        "pandas_guide.pdf",
+        "data_visualization.pdf",
+        "time_series.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/vmEHCJofslg",
+        "https://www.youtube.com/embed/r-uOLxNrNk8",
+        "https://www.youtube.com/embed/otCriSKVV_8",
+        "https://www.youtube.com/embed/zmdjNSmRXF4"
+      ],
+      "courseId": 3,
+      "courseTag": "ML",
+      "longDescription": "Научитесь анализировать данные с помощью библиотеки Pandas, визуализировать результаты и работать с временными рядами.",
+      "competences": [
+        "Анализ данных",
+        "Работа с Pandas",
+        "Визуализация",
+        "Временные ряды"
+      ],
+      "shortInfo": {
+        "title": "Анализ данных с Pandas",
+        "description": "Изучите методы анализа и визуализации данных с Pandas.",
+        "rating": 4,
+        "difficulty": 25,
+        "id": 3,
         "courseTag": "ML",
-        "shortInfo": {
-        "title":"Машинное обучение",
-        "description": "Погрузитесь в мир машинного обучения и нейронных сетей.",
+        "imageUrl": "https://i.imgur.com/hYNmga2.jpg"
+      }
+    },
+    {
+      "courseName": "Основы Docker",
+      "descriptionList": [
+        "Раздел 1: Введение в контейнеризацию",
+        "Раздел 2: Создание Docker-образов",
+        "Раздел 3: Оркестрация контейнеров",
+        "Раздел 4: Docker в production"
+      ],
+      "documentList": [
+        "docker_intro.pdf",
+        "docker_images.pdf",
+        "container_orchestration.pdf",
+        "production_ready.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/3c-iBn73dDE",
+        "https://www.youtube.com/embed/Gjnup-PuquQ",
+        "https://www.youtube.com/embed/YFl2mCHdv24",
+        "https://www.youtube.com/embed/Kyx2PsuwomE"
+      ],
+      "courseId": 4,
+      "courseTag": "DevOps",
+      "longDescription": "Курс научит вас основам контейнеризации, созданию Docker-образов и управлению контейнерами в production-среде.",
+      "competences": [
+        "Контейнеризация",
+        "Docker-образы",
+        "Оркестрация",
+        "Production"
+      ],
+      "shortInfo": {
+        "title": "Основы Docker",
+        "description": "Освойте Docker для разработки и развёртывания приложений.",
+        "rating": 4,
+        "difficulty": 35,
+        "id": 4,
+        "courseTag": "DevOps",
+        "imageUrl": "https://i.imgur.com/20G2DYp.jpg"
+      }
+    },
+    {
+      "courseName": "Машинное обучение",
+      "descriptionList": [
+        "Раздел 1: Введение в машинное обучение",
+        "Раздел 2: Алгоритмы классификации",
+        "Раздел 3: Регрессия и кластеризация",
+        "Раздел 4: Практические проекты"
+      ],
+      "documentList": [
+        "ml_intro.pdf",
+        "classification.pdf",
+        "regression_clustering.pdf",
+        "ml_projects.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/GwIo3gDZCVQ",
+        "https://www.youtube.com/embed/ukzFI9rgwfU",
+        "https://www.youtube.com/embed/Cr6VqTRO1v0",
+        "https://www.youtube.com/embed/x5Ujk-8t-lI"
+      ],
+      "courseId": 5,
+      "courseTag": "ML",
+      "longDescription": "Изучите алгоритмы машинного обучения и примените их для решения практических задач.",
+      "competences": [
+        "Основы ML",
+        "Классификация",
+        "Регрессия",
+        "Кластеризация"
+      ],
+      "shortInfo": {
+        "title": "Машинное обучение",
+        "description": "Погрузитесь в мир машинного обучения и алгоритмы для практических проектов.",
         "rating": 5,
         "difficulty": 40,
-        "id":3,
+        "id": 5,
         "courseTag": "ML",
-        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png",
-        "longDescription": "Этот курс предназначен для начинающих разработчиков, желающих освоить один из самых популярных языков программирования — Python. Вы изучите основы синтаксиса, структуры данных, работу с файлами и базами данных, а также основы объектно-ориентированного программирования. В ходе обучения будут рассмотрены реальные примеры использования Python в веб-разработке, анализе данных и автоматизации задач. После прохождения курса студенты смогут разрабатывать собственные проекты, работать с API и создавать автоматизированные решения.",
-        "competences": ["Понимание синтаксиса и структур данных в Python","Работа с файлами и базами данных","Создание программ с использованием объектно-ориентированного подхода","Основы работы с API и автоматизация процессов","Разработка простых веб-приложений на Python"]
-        }
+        "imageUrl": "https://i.imgur.com/veeZGXF.jpg"
+      }
     },
     {
-        "courseName": "Основы Docker",
-        "descriptionList": [
-            "Раздел 1: Введение в контейнеризацию",
-            "Раздел 2: Создание Docker-образов",
-            "Раздел 3: Оркестрация контейнеров",
-            "Раздел 4: Docker в production"
-        ],
-        "documentList": [
-            "docker_intro.pdf",
-            "docker_images.pdf",
-            "container_orchestration.pdf",
-            "production_ready.pdf"
-        ],
-        "videoList": [
-            "https://www.youtube.com/embed/fqMOX6JJhGo",
-            "https://www.youtube.com/embed/JprTjTViaEA",
-            "https://www.youtube.com/embed/XnBbIj6gxpk",
-            "https://www.youtube.com/embed/kTp5xUtg1Qk"
-        ],
-        "courseId": 4,
-        "courseTag": "DevOps",
-        "shortInfo": {
-        "title":"Основы Docker",
-        "description": "Освойте инструменты для автоматизации разработки и развертывания.",
-        "rating": 5,
+      "courseName": "React для начинающих",
+      "descriptionList": [
+        "Раздел 1: Введение в React",
+        "Раздел 2: Компоненты и JSX",
+        "Раздел 3: Состояние и события",
+        "Раздел 4: Работа с API"
+      ],
+      "documentList": [
+        "react_intro.pdf",
+        "components_jsx.pdf",
+        "state_events.pdf",
+        "api_integration.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/Ke90Tje7VS0",
+        "https://www.youtube.com/embed/sBws8MSXN7A",
+        "https://www.youtube.com/embed/DLX62G4lc44",
+        "https://www.youtube.com/embed/fgdpvwEWJ9M"
+      ],
+      "courseId": 6,
+      "courseTag": "Web",
+      "longDescription": "Курс для изучения основ React: создание компонентов, управление состоянием и работа с внешними API.",
+      "competences": [
+        "Основы React",
+        "JSX",
+        "Состояние",
+        "Работа с API"
+      ],
+      "shortInfo": {
+        "title": "React для начинающих",
+        "description": "Начните создавать одностраничные приложения с React.",
+        "rating": 4,
+        "difficulty": 30,
+        "id": 6,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/BsWeQUu.jpg"
+      }
+    },
+    {
+      "courseName": "Node.js API разработка",
+      "descriptionList": [
+        "Раздел 1: Основы Node.js",
+        "Раздел 2: Express и маршрутизация",
+        "Раздел 3: Работа с базами данных",
+        "Раздел 4: Создание RESTful API"
+      ],
+      "documentList": [
+        "node_intro.pdf",
+        "express_routing.pdf",
+        "database_integration.pdf",
+        "rest_api.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/TlB_eWDSMt4",
+        "https://www.youtube.com/embed/L72fhGm1tfE",
+        "https://www.youtube.com/embed/pKd0Rpw7O48",
+        "https://www.youtube.com/embed/1uFYMQ3V9-o"
+      ],
+      "courseId": 7,
+      "courseTag": "Software",
+      "longDescription": "Узнайте, как создавать API на Node.js с использованием Express и взаимодействовать с базами данных.",
+      "competences": [
+        "Node.js",
+        "Express",
+        "Базы данных",
+        "RESTful API"
+      ],
+      "shortInfo": {
+        "title": "Node.js API разработка",
+        "description": "Создавайте масштабируемые API на платформе Node.js.",
+        "rating": 4,
         "difficulty": 35,
-        "id":4,
+        "id": 7,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/Y8m0xZ2.jpg"
+      }
+    },
+    {
+      "courseName": "Мобильная разработка с Flutter",
+      "descriptionList": [
+        "Раздел 1: Введение в Flutter",
+        "Раздел 2: Создание UI",
+        "Раздел 3: Управление состоянием",
+        "Раздел 4: Публикация приложений"
+      ],
+      "documentList": [
+        "flutter_intro.pdf",
+        "flutter_ui.pdf",
+        "state_management.pdf",
+        "app_deployment.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/fq4N0hgOWzU",
+        "https://www.youtube.com/embed/x0uinJvhNxI",
+        "https://www.youtube.com/embed/1gDhl4leEzA",
+        "https://www.youtube.com/embed/PS-g1F_jCp8"
+      ],
+      "courseId": 8,
+      "courseTag": "Software",
+      "longDescription": "Изучите Flutter для создания кроссплатформенных мобильных приложений с красивым UI и современной архитектурой.",
+      "competences": [
+        "Flutter",
+        "Создание UI",
+        "Управление состоянием",
+        "Публикация приложений"
+      ],
+      "shortInfo": {
+        "title": "Мобильная разработка с Flutter",
+        "description": "Создавайте кроссплатформенные мобильные приложения на Flutter.",
+        "rating": 5,
+        "difficulty": 40,
+        "id": 8,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/pKnbFoF.jpg"
+      }
+    },
+    {
+      "courseName": "Курс по DevOps",
+      "descriptionList": [
+        "Раздел 1: Основы DevOps",
+        "Раздел 2: Инструменты CI/CD",
+        "Раздел 3: Контейнеризация и оркестрация",
+        "Раздел 4: Мониторинг и логирование"
+      ],
+      "documentList": [
+        "devops_intro.pdf",
+        "ci_cd.pdf",
+        "containerization.pdf",
+        "monitoring_logging.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/1yKfC43Vt-c",
+        "https://www.youtube.com/embed/s94sN4s05I4",
+        "https://www.youtube.com/embed/VGmFqki_5tg",
+        "https://www.youtube.com/embed/W-f4kWgKtug"
+      ],
+      "courseId": 9,
+      "courseTag": "DevOps",
+      "longDescription": "Узнайте основы DevOps, освоив инструменты CI/CD, контейнеризацию, оркестрацию и мониторинг систем.",
+      "competences": [
+        "DevOps",
+        "CI/CD",
+        "Контейнеризация",
+        "Мониторинг"
+      ],
+      "shortInfo": {
+        "title": "Курс по DevOps",
+        "description": "Освойте практики DevOps для автоматизации разработки и развёртывания.",
+        "rating": 5,
+        "difficulty": 45,
+        "id": 9,
         "courseTag": "DevOps",
-        "imageUrl": "https://i.imgur.com/Y7cUk7Y.png",
-        "longDescription": "Этот курс предназначен для начинающих разработчиков, желающих освоить один из самых популярных языков программирования — Python. Вы изучите основы синтаксиса, структуры данных, работу с файлами и базами данных, а также основы объектно-ориентированного программирования. В ходе обучения будут рассмотрены реальные примеры использования Python в веб-разработке, анализе данных и автоматизации задач. После прохождения курса студенты смогут разрабатывать собственные проекты, работать с API и создавать автоматизированные решения.",
-        "competences": ["Понимание синтаксиса и структур данных в Python","Работа с файлами и базами данных","Создание программ с использованием объектно-ориентированного подхода","Основы работы с API и автоматизация процессов","Разработка простых веб-приложений на Python"]
-        }
+        "imageUrl": "https://i.imgur.com/7TDEyBp.jpg"
+      }
+    },
+    {
+      "courseName": "Алгоритмы и структуры данных на Python",
+      "descriptionList": [
+        "Раздел 1: Базовые алгоритмы",
+        "Раздел 2: Структуры данных",
+        "Раздел 3: Сортировки и поиск",
+        "Раздел 4: Практические задачи"
+      ],
+      "documentList": [
+        "algorithms_intro.pdf",
+        "data_structures.pdf",
+        "sorting_search.pdf",
+        "practice_tasks.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/8hly31xKli0",
+        "https://www.youtube.com/embed/bum_19loj9A",
+        "https://www.youtube.com/embed/8jvoTV54nXw",
+        "https://www.youtube.com/embed/7eh4d6sabA0"
+      ],
+      "courseId": 10,
+      "courseTag": "Math",
+      "longDescription": "Курс охватывает базовые алгоритмы и структуры данных с примерами реализации на Python.",
+      "competences": [
+        "Алгоритмы",
+        "Структуры данных",
+        "Сортировки",
+        "Поиск"
+      ],
+      "shortInfo": {
+        "title": "Алгоритмы и структуры данных на Python",
+        "description": "Углубитесь в алгоритмы и структуры данных с практическими примерами на Python.",
+        "rating": 5,
+        "difficulty": 50,
+        "id": 10,
+        "courseTag": "Math",
+        "imageUrl": "https://thumbs.dreamstime.com/b/%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC-%D0%B4%D0%B5%D0%BB%D0%BE-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-148919633.jpg"
+      }
+    },
+    {
+      "courseName": "Разработка игр с Unity",
+      "descriptionList": [
+        "Раздел 1: Введение в Unity",
+        "Раздел 2: Основы 2D и 3D графики",
+        "Раздел 3: Создание игрового процесса",
+        "Раздел 4: Публикация игр"
+      ],
+      "documentList": [
+        "unity_intro.pdf",
+        "2d_3d_basics.pdf",
+        "gameplay_design.pdf",
+        "game_deployment.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/IlKaB1etrik",
+        "https://www.youtube.com/embed/fWmUINi1xEg",
+        "https://www.youtube.com/embed/THnivyG0Mvo",
+        "https://www.youtube.com/embed/VRyH4TRI30w"
+      ],
+      "courseId": 11,
+      "courseTag": "Art",
+      "longDescription": "Научитесь создавать игры с использованием движка Unity: от базовой графики до публикации готового продукта.",
+      "competences": [
+        "Unity",
+        "2D и 3D графика",
+        "Игровая логика",
+        "Публикация игр"
+      ],
+      "shortInfo": {
+        "title": "Разработка игр с Unity",
+        "description": "Создавайте игры с помощью одного из самых популярных движков – Unity.",
+        "rating": 5,
+        "difficulty": 40,
+        "id": 11,
+        "courseTag": "Art",
+        "imageUrl": "https://i.imgur.com/6BiXsKt.jpg"
+      }
+    },
+    {
+      "courseName": "Введение в кибербезопасность",
+      "descriptionList": [
+        "Раздел 1: Основы кибербезопасности",
+        "Раздел 2: Защита сетей и данных",
+        "Раздел 3: Анализ уязвимостей",
+        "Раздел 4: Практические кейсы"
+      ],
+      "documentList": [
+        "cyber_intro.pdf",
+        "network_security.pdf",
+        "vulnerability_analysis.pdf",
+        "case_studies.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/inWWhr5tnEA",
+        "https://www.youtube.com/embed/3Kq1MIfTWCE",
+        "https://www.youtube.com/embed/Er7ymI60VvE",
+        "https://www.youtube.com/embed/QYwHuFgbKZA"
+      ],
+      "courseId": 12,
+      "courseTag": "Software",
+      "longDescription": "Курс для знакомства с принципами кибербезопасности, методами защиты сетей и анализа уязвимостей.",
+      "competences": [
+        "Кибербезопасность",
+        "Защита данных",
+        "Анализ уязвимостей",
+        "Практические кейсы"
+      ],
+      "shortInfo": {
+        "title": "Введение в кибербезопасность",
+        "description": "Изучите базовые принципы защиты информации и сетей.",
+        "rating": 4,
+        "difficulty": 35,
+        "id": 12,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/5Cd4YSn.jpg"
+      }
+    },
+    {
+      "courseName": "SQL для начинающих",
+      "descriptionList": [
+        "Раздел 1: Основы SQL",
+        "Раздел 2: Работа с базами данных",
+        "Раздел 3: Сортировки и фильтрация данных",
+        "Раздел 4: Практические запросы"
+      ],
+      "documentList": [
+        "sql_intro.pdf",
+        "database_basics.pdf",
+        "query_examples.pdf",
+        "advanced_sql.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/7S_tz1z_5bA",
+        "https://www.youtube.com/embed/HXV3zeQKqGY",
+        "https://www.youtube.com/embed/3a3ZrvX1ETg",
+        "https://www.youtube.com/embed/9Pzj7Aj25lw"
+      ],
+      "courseId": 13,
+      "courseTag": "Web",
+      "longDescription": "Изучите язык SQL для работы с реляционными базами данных, создания запросов и манипуляции данными.",
+      "competences": [
+        "SQL",
+        "Работа с БД",
+        "Фильтрация данных",
+        "Практические запросы"
+      ],
+      "shortInfo": {
+        "title": "SQL для начинающих",
+        "description": "Научитесь работать с базами данных с помощью языка SQL.",
+        "rating": 4,
+        "difficulty": 30,
+        "id": 13,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/zhO5eRL.jpg"
+      }
+    },
+    {
+      "courseName": "Введение в облачные технологии",
+      "descriptionList": [
+        "Раздел 1: Основы облачных вычислений",
+        "Раздел 2: AWS, Azure и GCP",
+        "Раздел 3: Развёртывание приложений",
+        "Раздел 4: Безопасность в облаке"
+      ],
+      "documentList": [
+        "cloud_intro.pdf",
+        "aws_azure_gcp.pdf",
+        "deployment_cloud.pdf",
+        "cloud_security.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/ulprqHHWlng",
+        "https://www.youtube.com/embed/3O_VOIZmyYs",
+        "https://www.youtube.com/embed/CPZ1VTqUTe0",
+        "https://www.youtube.com/embed/9d4M2LZ6snk"
+      ],
+      "courseId": 14,
+      "courseTag": "DevOps",
+      "longDescription": "Ознакомьтесь с основами облачных технологий, изучите платформы AWS, Azure и GCP, а также методы развёртывания приложений.",
+      "competences": [
+        "Облачные вычисления",
+        "AWS/Azure/GCP",
+        "Развёртывание",
+        "Безопасность"
+      ],
+      "shortInfo": {
+        "title": "Введение в облачные технологии",
+        "description": "Изучите основы работы с облачными платформами для разработки и развёртывания приложений.",
+        "rating": 5,
+        "difficulty": 40,
+        "id": 14,
+        "courseTag": "DevOps",
+        "imageUrl": "https://i.imgur.com/jK2utLM.jpg"
+      }
+    },
+    {
+      "courseName": "Angular для веб-разработки",
+      "descriptionList": [
+        "Раздел 1: Введение в Angular",
+        "Раздел 2: Компоненты и сервисы",
+        "Раздел 3: Директивы и пайпы",
+        "Раздел 4: Работа с формами"
+      ],
+      "documentList": [
+        "angular_intro.pdf",
+        "components_services.pdf",
+        "directives_pipes.pdf",
+        "angular_forms.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/3qBXWUpoPHo",
+        "https://www.youtube.com/embed/Fdf5aTYRW0Y",
+        "https://www.youtube.com/embed/_TLhUCjY9iA",
+        "https://www.youtube.com/embed/2OHbjep_WjQ"
+      ],
+      "courseId": 15,
+      "courseTag": "Web",
+      "longDescription": "Курс по Angular для веб-разработки: создание компонентов, использование сервисов и работа с реактивными формами.",
+      "competences": [
+        "Angular",
+        "Компоненты",
+        "Сервисы",
+        "Реактивные формы"
+      ],
+      "shortInfo": {
+        "title": "Angular для веб-разработки",
+        "description": "Создавайте динамичные веб-приложения с помощью Angular.",
+        "rating": 4,
+        "difficulty": 35,
+        "id": 15,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/zN6IF6J.jpg"
+      }
+    },
+    {
+      "courseName": "Курс по Rust",
+      "descriptionList": [
+        "Раздел 1: Введение в Rust",
+        "Раздел 2: Синтаксис и особенности языка",
+        "Раздел 3: Управление памятью",
+        "Раздел 4: Практические проекты"
+      ],
+      "documentList": [
+        "rust_intro.pdf",
+        "rust_syntax.pdf",
+        "memory_management.pdf",
+        "rust_projects.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/V8KOjpCkJ7I",
+        "https://www.youtube.com/embed/zF34dRivLOw",
+        "https://www.youtube.com/embed/d1uraoHM8G4",
+        "https://www.youtube.com/embed/5VQdIVMYj9w"
+      ],
+      "courseId": 16,
+      "courseTag": "Software",
+      "longDescription": "Ознакомьтесь с языком Rust, его синтаксисом, особенностями управления памятью и практическим применением.",
+      "competences": [
+        "Rust",
+        "Синтаксис",
+        "Управление памятью",
+        "Проекты на Rust"
+      ],
+      "shortInfo": {
+        "title": "Курс по Rust",
+        "description": "Научитесь программировать на Rust – современном и безопасном языке.",
+        "rating": 5,
+        "difficulty": 45,
+        "id": 16,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/tcB7Z5s.jpg"
+      }
+    },
+    {
+      "courseName": "Программирование на C#",
+      "descriptionList": [
+        "Раздел 1: Введение в C#",
+        "Раздел 2: Основы синтаксиса",
+        "Раздел 3: Объектно-ориентированное программирование",
+        "Раздел 4: Создание приложений"
+      ],
+      "documentList": [
+        "csharp_intro.pdf",
+        "csharp_syntax.pdf",
+        "oop_csharp.pdf",
+        "csharp_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/GhQdlIFylQ8",
+        "https://www.youtube.com/embed/3u1fu6f8Hto",
+        "https://www.youtube.com/embed/4F1C0tPjPxg",
+        "https://www.youtube.com/embed/Ob8J72cTQ8g"
+      ],
+      "courseId": 17,
+      "courseTag": "Software",
+      "longDescription": "Курс для изучения C#, его синтаксиса и особенностей ООП, а также создания приложений на платформе .NET.",
+      "competences": [
+        "C#",
+        "Синтаксис",
+        "ООП",
+        "Разработка на .NET"
+      ],
+      "shortInfo": {
+        "title": "Программирование на C#",
+        "description": "Изучите основы C# для разработки современных приложений.",
+        "rating": 4,
+        "difficulty": 40,
+        "id": 17,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/NvtjCou.jpg"
+      }
+    },
+    {
+      "courseName": "Разработка на Java",
+      "descriptionList": [
+        "Раздел 1: Введение в Java",
+        "Раздел 2: Основы синтаксиса и ООП",
+        "Раздел 3: Работа с коллекциями",
+        "Раздел 4: Разработка приложений"
+      ],
+      "documentList": [
+        "java_intro.pdf",
+        "java_syntax.pdf",
+        "collections.pdf",
+        "java_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/grEKMHGYyns",
+        "https://www.youtube.com/embed/eIrMbAQSU34",
+        "https://www.youtube.com/embed/8cm1x4bC610",
+        "https://www.youtube.com/embed/Qgl81fPcLc8"
+      ],
+      "courseId": 18,
+      "courseTag": "Software",
+      "longDescription": "Курс по Java охватывает основы языка, ООП, работу с коллекциями и создание приложений.",
+      "competences": [
+        "Java",
+        "ООП",
+        "Коллекции",
+        "Разработка приложений"
+      ],
+      "shortInfo": {
+        "title": "Разработка на Java",
+        "description": "Углубитесь в программирование на Java и создание масштабируемых приложений.",
+        "rating": 5,
+        "difficulty": 45,
+        "id": 18,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/WEHEvYE.jpg"
+      }
+    },
+    {
+      "courseName": "Основы Go",
+      "descriptionList": [
+        "Раздел 1: Введение в Go",
+        "Раздел 2: Синтаксис и базовые конструкции",
+        "Раздел 3: Работа с горутинами",
+        "Раздел 4: Создание приложений"
+      ],
+      "documentList": [
+        "go_intro.pdf",
+        "go_syntax.pdf",
+        "goroutines.pdf",
+        "go_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/YS4e4q9oBaU",
+        "https://www.youtube.com/embed/T6eNBcjNyOY",
+        "https://www.youtube.com/embed/Ffqu73wQrp4",
+        "https://www.youtube.com/embed/ZTOwL7SZ2KM"
+      ],
+      "courseId": 19,
+      "courseTag": "Software",
+      "longDescription": "Научитесь основам языка Go, изучите его синтаксис, конкурентное программирование и создание приложений.",
+      "competences": [
+        "Go",
+        "Синтаксис",
+        "Горутины",
+        "Разработка приложений"
+      ],
+      "shortInfo": {
+        "title": "Основы Go",
+        "description": "Изучите язык Go для разработки высокопроизводительных приложений.",
+        "rating": 4,
+        "difficulty": 40,
+        "id": 19,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/noWSm92.jpg"
+      }
+    },
+    {
+      "courseName": "Разработка микросервисов с Spring Boot",
+      "descriptionList": [
+        "Раздел 1: Введение в Spring Boot",
+        "Раздел 2: Создание REST API",
+        "Раздел 3: Разработка микросервисов",
+        "Раздел 4: Контейнеризация и оркестрация"
+      ],
+      "documentList": [
+        "spring_intro.pdf",
+        "rest_api.pdf",
+        "microservices.pdf",
+        "containerization.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/vtPkZShrvXQ",
+        "https://www.youtube.com/embed/5-SvgUoF0j4",
+        "https://www.youtube.com/embed/VyH6dH4r9hA",
+        "https://www.youtube.com/embed/IFyJjBRMT-w"
+      ],
+      "courseId": 20,
+      "courseTag": "Software",
+      "longDescription": "Научитесь создавать микросервисные архитектуры с использованием Spring Boot, развёртывать их и обеспечивать масштабируемость.",
+      "competences": [
+        "Spring Boot",
+        "REST API",
+        "Микросервисы",
+        "Контейнеризация"
+      ],
+      "shortInfo": {
+        "title": "Разработка микросервисов с Spring Boot",
+        "description": "Создавайте масштабируемые микросервисы с помощью Spring Boot.",
+        "rating": 5,
+        "difficulty": 50,
+        "id": 20,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/2qBZrF9.jpg"
+      }
+    },
+    {
+      "courseName": "Искусственный интеллект",
+      "descriptionList": [
+        "Раздел 1: Введение в ИИ",
+        "Раздел 2: Основы нейронных сетей",
+        "Раздел 3: Обучение моделей",
+        "Раздел 4: Практические приложения"
+      ],
+      "documentList": [
+        "ai_intro.pdf",
+        "neural_networks.pdf",
+        "model_training.pdf",
+        "ai_applications.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/2ePf9rue1Ao",
+        "https://www.youtube.com/embed/ZJkczP9zfIc",
+        "https://www.youtube.com/embed/WS6sH4wPifU",
+        "https://www.youtube.com/embed/QzkAsj3mmHk"
+      ],
+      "courseId": 21,
+      "courseTag": "ML",
+      "longDescription": "Курс по искусственному интеллекту: основы нейронных сетей, обучение моделей и практическое применение ИИ.",
+      "competences": [
+        "ИИ",
+        "Нейронные сети",
+        "Обучение моделей",
+        "Приложения ИИ"
+      ],
+      "shortInfo": {
+        "title": "Искусственный интеллект",
+        "description": "Откройте для себя возможности искусственного интеллекта и машинного обучения.",
+        "rating": 5,
+        "difficulty": 55,
+        "id": 21,
+        "courseTag": "ML",
+        "imageUrl": "https://i.imgur.com/veeZGXF.png"
+      }
+    },
+    {
+      "courseName": "NLP с Python",
+      "descriptionList": [
+        "Раздел 1: Введение в NLP",
+        "Раздел 2: Работа с NLTK",
+        "Раздел 3: Анализ текстов",
+        "Раздел 4: Практические кейсы"
+      ],
+      "documentList": [
+        "nlp_intro.pdf",
+        "nltk_guide.pdf",
+        "text_analysis.pdf",
+        "nlp_cases.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/NpEKl7D0pzk",
+        "https://www.youtube.com/embed/8XnR3QH9m1Q",
+        "https://www.youtube.com/embed/r8o5B3fzjE0",
+        "https://www.youtube.com/embed/NE7S2KKr2Yk"
+      ],
+      "courseId": 22,
+      "courseTag": "ML",
+      "longDescription": "Изучите обработку естественного языка с помощью Python, NLTK и других библиотек для анализа текстов.",
+      "competences": [
+        "NLP",
+        "NLTK",
+        "Анализ текстов",
+        "Практические кейсы"
+      ],
+      "shortInfo": {
+        "title": "NLP с Python",
+        "description": "Овладейте методами обработки естественного языка с Python.",
+        "rating": 4,
+        "difficulty": 45,
+        "id": 22,
+        "courseTag": "ML",
+        "imageUrl": "https://i.imgur.com/f0Al9wk.jpg"
+      }
+    },
+    {
+      "courseName": "Веб-разработка с Django",
+      "descriptionList": [
+        "Раздел 1: Введение в Django",
+        "Раздел 2: Создание приложений",
+        "Раздел 3: Работа с базой данных",
+        "Раздел 4: Развёртывание проекта"
+      ],
+      "documentList": [
+        "django_intro.pdf",
+        "django_apps.pdf",
+        "django_database.pdf",
+        "django_deployment.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/F5mRW0jo-U4",
+        "https://www.youtube.com/embed/e1IyzVyrLSU",
+        "https://www.youtube.com/embed/rHux0gMZ3Eg",
+        "https://www.youtube.com/embed/FevZR_Ntk94"
+      ],
+      "courseId": 23,
+      "courseTag": "Web",
+      "longDescription": "Курс для изучения Django: от основ до создания полноценных веб-приложений с интеграцией базы данных.",
+      "competences": [
+        "Django",
+        "Веб-приложения",
+        "ORM",
+        "Развёртывание"
+      ],
+      "shortInfo": {
+        "title": "Веб-разработка с Django",
+        "description": "Создавайте современные веб-приложения с использованием Django.",
+        "rating": 5,
+        "difficulty": 40,
+        "id": 23,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/ZDcZoXj.jpg"
+      }
+    },
+    {
+      "courseName": "Курс по Ruby on Rails",
+      "descriptionList": [
+        "Раздел 1: Введение в Ruby",
+        "Раздел 2: Основы Rails",
+        "Раздел 3: MVC архитектура",
+        "Раздел 4: Разработка приложений"
+      ],
+      "documentList": [
+        "rails_intro.pdf",
+        "ruby_basics.pdf",
+        "mvc_architecture.pdf",
+        "rails_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/fmyvWz5TUWg",
+        "https://www.youtube.com/embed/5zXED0H46eU",
+        "https://www.youtube.com/embed/6d5g1-bbeDk",
+        "https://www.youtube.com/embed/ZV6kILHdiLM"
+      ],
+      "courseId": 24,
+      "courseTag": "Web",
+      "longDescription": "Изучите Ruby on Rails для быстрой разработки веб-приложений с использованием MVC архитектуры.",
+      "competences": [
+        "Ruby",
+        "Rails",
+        "MVC",
+        "Веб-разработка"
+      ],
+      "shortInfo": {
+        "title": "Курс по Ruby on Rails",
+        "description": "Научитесь создавать веб-приложения с помощью Ruby on Rails.",
+        "rating": 4,
+        "difficulty": 40,
+        "id": 24,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/DXNvMPF.jpg"
+      }
+    },
+    {
+      "courseName": "Курс по PHP",
+      "descriptionList": [
+        "Раздел 1: Введение в PHP",
+        "Раздел 2: Основы синтаксиса",
+        "Раздел 3: Работа с базами данных",
+        "Раздел 4: Разработка веб-приложений"
+      ],
+      "documentList": [
+        "php_intro.pdf",
+        "php_syntax.pdf",
+        "php_database.pdf",
+        "php_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/OK_JCtrrv-c",
+        "https://www.youtube.com/embed/1SnPKhCdlsU",
+        "https://www.youtube.com/embed/3FO3Bi3J0Lk",
+        "https://www.youtube.com/embed/Nt8lkK-cH60"
+      ],
+      "courseId": 25,
+      "courseTag": "Web",
+      "longDescription": "Курс по PHP для начинающих, охватывающий основы языка, работу с базами данных и разработку динамичных веб-сайтов.",
+      "competences": [
+        "PHP",
+        "Синтаксис",
+        "Базы данных",
+        "Веб-приложения"
+      ],
+      "shortInfo": {
+        "title": "Курс по PHP",
+        "description": "Освойте PHP для создания динамичных веб-сайтов.",
+        "rating": 4,
+        "difficulty": 35,
+        "id": 25,
+        "courseTag": "Web",
+        "imageUrl": "https://i.imgur.com/OuZFvX2.jpg"
+      }
+    },
+    {
+      "courseName": "Введение в Kotlin",
+      "descriptionList": [
+        "Раздел 1: Основы Kotlin",
+        "Раздел 2: Синтаксис и функции",
+        "Раздел 3: Объектно-ориентированное программирование",
+        "Раздел 4: Разработка Android-приложений"
+      ],
+      "documentList": [
+        "kotlin_intro.pdf",
+        "kotlin_syntax.pdf",
+        "oop_kotlin.pdf",
+        "android_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/2cKIFcH45yk",
+        "https://www.youtube.com/embed/8syhR8c73TE",
+        "https://www.youtube.com/embed/O3NEeRzJ_r8",
+        "https://www.youtube.com/embed/2w-SBCcGNmo"
+      ],
+      "courseId": 26,
+      "courseTag": "Software",
+      "longDescription": "Курс по Kotlin для Android-разработки: изучите язык, его особенности и создание мобильных приложений.",
+      "competences": [
+        "Kotlin",
+        "Синтаксис",
+        "ООП",
+        "Android"
+      ],
+      "shortInfo": {
+        "title": "Введение в Kotlin",
+        "description": "Начните разрабатывать Android-приложения на Kotlin.",
+        "rating": 4,
+        "difficulty": 40,
+        "id": 26,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/wGoOt53.jpg"
+      }
+    },
+    {
+      "courseName": "Swift для начинающих",
+      "descriptionList": [
+        "Раздел 1: Введение в Swift",
+        "Раздел 2: Основы синтаксиса",
+        "Раздел 3: Работа с iOS SDK",
+        "Раздел 4: Разработка приложений"
+      ],
+      "documentList": [
+        "swift_intro.pdf",
+        "swift_syntax.pdf",
+        "ios_sdk.pdf",
+        "swift_apps.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/6OSiC3HDbSU",
+        "https://www.youtube.com/embed/1HN7usMROt8",
+        "https://www.youtube.com/embed/MW7VWmX1J34",
+        "https://www.youtube.com/embed/2o2xHc7f9WU"
+      ],
+      "courseId": 27,
+      "courseTag": "Software",
+      "longDescription": "Изучите основы языка Swift и начните создавать приложения для iOS с использованием современного SDK.",
+      "competences": [
+        "Swift",
+        "Синтаксис",
+        "iOS SDK",
+        "iOS приложения"
+      ],
+      "shortInfo": {
+        "title": "Swift для начинающих",
+        "description": "Начните разрабатывать приложения для iOS с Swift.",
+        "rating": 4,
+        "difficulty": 40,
+        "id": 27,
+        "courseTag": "Software",
+        "imageUrl": "https://i.imgur.com/xU0FRWw.jpg"
+      }
+    },
+    {
+      "courseName": "Разработка AR/VR приложений",
+      "descriptionList": [
+        "Раздел 1: Введение в AR/VR",
+        "Раздел 2: Инструменты разработки",
+        "Раздел 3: Создание интерактивного опыта",
+        "Раздел 4: Публикация проектов"
+      ],
+      "documentList": [
+        "arvr_intro.pdf",
+        "dev_tools.pdf",
+        "interactive_experience.pdf",
+        "project_deployment.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/88Rc3W9IJvY",
+        "https://www.youtube.com/embed/8aO5L7nXEWU",
+        "https://www.youtube.com/embed/1Dp8h4slfp8",
+        "https://www.youtube.com/embed/PCxL0t5Ptp8"
+      ],
+      "courseId": 28,
+      "courseTag": "Art",
+      "longDescription": "Изучите основы разработки AR/VR приложений с использованием современных инструментов и движков.",
+      "competences": [
+        "AR/VR",
+        "Инструменты разработки",
+        "Интерактивный опыт",
+        "Публикация"
+      ],
+      "shortInfo": {
+        "title": "Разработка AR/VR приложений",
+        "description": "Создавайте захватывающие AR и VR приложения с современными инструментами.",
+        "rating": 5,
+        "difficulty": 50,
+        "id": 28,
+        "courseTag": "Art",
+        "imageUrl": "https://i.imgur.com/pQPtW7K.jpg"
+      }
+    },
+    {
+      "courseName": "Блокчейн и криптовалюты",
+      "descriptionList": [
+        "Раздел 1: Введение в блокчейн",
+        "Раздел 2: Принципы криптовалют",
+        "Раздел 3: Создание смарт-контрактов",
+        "Раздел 4: Практические кейсы"
+      ],
+      "documentList": [
+        "blockchain_intro.pdf",
+        "crypto_basics.pdf",
+        "smart_contracts.pdf",
+        "blockchain_cases.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/SSo_EIwHSd4",
+        "https://www.youtube.com/embed/m6bV4wEqUQI",
+        "https://www.youtube.com/embed/8GqRkR7xg3Y",
+        "https://www.youtube.com/embed/BG_FFQHO__c"
+      ],
+      "courseId": 29,
+      "courseTag": "Software",
+      "longDescription": "Изучите технологию блокчейн, основы криптовалют и создание смарт-контрактов с практическими примерами.",
+      "competences": [
+        "Блокчейн",
+        "Криптовалюты",
+        "Смарт-контракты",
+        "Практические кейсы"
+      ],
+      "shortInfo": {
+        "title": "Блокчейн и криптовалюты",
+        "description": "Откройте для себя мир блокчейн-технологий и криптовалют.",
+        "rating": 5,
+        "difficulty": 45,
+        "id": 29,
+        "courseTag": "Software",
+        "imageUrl": "https://www.coresite.com/hubfs/Imported_Blog_Media/643d7058fcefba0729ab7de6_th-blockchain-use-cases-data-center.png"
+      }
+    },
+    {
+      "courseName": "Основы UI/UX дизайна",
+      "descriptionList": [
+        "Раздел 1: Введение в UI/UX",
+        "Раздел 2: Принципы дизайна",
+        "Раздел 3: Инструменты прототипирования",
+        "Раздел 4: Практические проекты"
+      ],
+      "documentList": [
+        "uiux_intro.pdf",
+        "design_principles.pdf",
+        "prototyping_tools.pdf",
+        "uiux_projects.pdf"
+      ],
+      "videoList": [
+        "https://www.youtube.com/embed/Naw6B0YlOuo",
+        "https://www.youtube.com/embed/r6w4XkpT1dA",
+        "https://www.youtube.com/embed/1Ae3eqn54OA",
+        "https://www.youtube.com/embed/9YcYkzmxTu4"
+      ],
+      "courseId": 30,
+      "courseTag": "Art",
+      "longDescription": "Научитесь основам UI/UX дизайна, принципам визуального восприятия и методам прототипирования для создания удобных интерфейсов.",
+      "competences": [
+        "UI/UX",
+        "Дизайн",
+        "Прототипирование",
+        "Проекты"
+      ],
+      "shortInfo": {
+        "title": "Основы UI/UX дизайна",
+        "description": "Изучите основы UI/UX для создания интуитивных и привлекательных интерфейсов.",
+        "rating": 5,
+        "difficulty": 40,
+        "id": 30,
+        "courseTag": "Art",
+        "imageUrl": "https://i.imgur.com/8oZjtk5.jpg"
+      }
     }
   ]
 }

@@ -12,6 +12,7 @@ from torch_geometric.nn import GATConv
 import networkx as nx
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
+import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 CORS(app)
@@ -33,6 +34,22 @@ def create_knowledge_graph_from_json(json_file):
     return G, data["courses"]
 
 G, courses = create_knowledge_graph_from_json("mockCourses.json")
+
+'''
+def visualize_and_save_graph(G, filename="graph.png"):
+    plt.figure(figsize=(12, 8))
+    pos = nx.spring_layout(G, seed=42)  # Определяем расположение узлов
+    nx.draw(G, pos, with_labels=True, node_size=3000, node_color="lightblue", edge_color="gray", font_size=10,
+            font_weight="bold")
+    plt.title("Knowledge Graph Visualization")
+
+    # Сохранение в файл
+    plt.savefig(filename, format="png", dpi=300)
+    #plt.show()
+
+
+visualize_and_save_graph(G, "knowledge_graph.png")
+'''
 
 @socketio.on('connect')
 def handle_connect():

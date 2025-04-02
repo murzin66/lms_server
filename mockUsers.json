@@ -14,7 +14,11 @@
             "enrolledCourses": [
                 1,
                 2,
-                3
+                3,
+                12,
+                6,
+                17,
+                5
             ],
             "recommendations": [
                 {
@@ -39,7 +43,11 @@
             "recommendationTags": [
                 "DevOps",
                 "Web",
-                "Web"
+                "Web",
+                "Math",
+                "Web",
+                "Programming",
+                "ML"
             ]
         },
         {

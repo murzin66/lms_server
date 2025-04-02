@@ -12,12 +12,30 @@
                 ]
             },
             {
-                "CourseName": "Docker basics",
+                "CourseName": "Веб-разработка на JavaScript",
+                "moduleProgress": [
+                    50,
+                    30,
+                    40,
+                    10
+                ]
+            },
+            {
+                "CourseName": "Анализ данных с Pandas",
                 "moduleProgress": [
                     80,
                     60,
                     70,
-                    100
+                    40
+                ]
+            },
+            {
+                "CourseName": "Основы Docker",
+                "moduleProgress": [
+                    90,
+                    50,
+                    60,
+                    80
                 ]
             }
         ]
@@ -35,12 +53,30 @@
                 ]
             },
             {
-                "CourseName": "Docker basics",
+                "CourseName": "Веб-разработка на JavaScript",
                 "moduleProgress": [
-                    80,
+                    50,
                     60,
+                    50,
+                    20
+                ]
+            },
+            {
+                "CourseName": "Анализ данных с Pandas",
+                "moduleProgress": [
+                    60,
+                    40,
+                    50,
+                    30
+                ]
+            },
+            {
+                "CourseName": "Основы Docker",
+                "moduleProgress": [
+                    50,
                     70,
-                    100
+                    60,
+                    40
                 ]
             }
         ]
