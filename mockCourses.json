@@ -48,10 +48,10 @@
         "Раздел 4: Современный ES6+"
       ],
       "documentList": [
-        "html_css_basics.pdf",
-        "js_fundamentals.pdf",
-        "dom_manipulation.pdf",
-        "es6_guide.pdf"
+        "https://www3.cs.stonybrook.edu/~pfodor/courses/CSE316/L03-HTML_CSS.pdf",
+        "https://autotelicum.github.io/Smooth-CoffeeScript/literate/js-intro.pdf",
+        "https://assets.digitalocean.com/books/understanding-the-dom.pdf",
+        "https://objectcomputing.com/download_file/view/219"
       ],
       "videoList": [
         "https://www.youtube.com/embed/PkZNo7MFNFg",
@@ -126,10 +126,10 @@
         "Раздел 4: Docker в production"
       ],
       "documentList": [
-        "docker_intro.pdf",
-        "docker_images.pdf",
-        "container_orchestration.pdf",
-        "production_ready.pdf"
+        "https://users.exa.unicen.edu.ar/~cmateos/cos/clase1-docker.pdf",
+        "https://www.nxp.com/docs/en/supporting-information/DOCKER-CONTAINER-FUNDAMENTALS.pdf",
+        "https://agenda.infn.it/event/20847/contributions/107178/attachments/69270/86007/container_orchestration_v1.pdf",
+        "https://dl.dod.cyber.mil/wp-content/uploads/devsecops/pdf/DevSecOps_Enterprise_Container_Image_Creation_and_Deployment_Guide_2.6-Public-Release.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/3c-iBn73dDE",
@@ -165,10 +165,10 @@
         "Раздел 4: Практические проекты"
       ],
       "documentList": [
-        "ml_intro.pdf",
-        "classification.pdf",
-        "regression_clustering.pdf",
-        "ml_projects.pdf"
+        "https://www.csd.uwo.ca/~yboykov/Courses/ML/ML-intro.pdf",
+        "https://www.stat.cmu.edu/~cshalizi/350/lectures/08/lecture-08.pdf",
+        "https://www.stat.cmu.edu/~cshalizi/350/lectures/10/lecture-10.pdf",
+        "https://web.stanford.edu/class/cs229/projects2021.html"
       ],
       "videoList": [
         "https://www.youtube.com/embed/GwIo3gDZCVQ",
@@ -204,10 +204,10 @@
         "Раздел 4: Работа с API"
       ],
       "documentList": [
-        "react_intro.pdf",
-        "components_jsx.pdf",
-        "state_events.pdf",
-        "api_integration.pdf"
+        "https://ruvds.com/downloads/ReactCourse.pdf",
+        "https://library.kre.dp.ua/Books/2-4%20kurs/%D0%9C%D0%BE%D0%B2%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F/React/React.pdf",
+        "https://se.ifmo.ru/documents/10192/0/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2B%D0%BF%D0%BE%2BReact.%2B%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%2B%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F%2B%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F.pdf/756f59bb-d0e0-4e60-a0a7-04b6c8aefc63",
+        "https://habr.com/ru/companies/ruvds/articles/460018/"
       ],
       "videoList": [
         "https://www.youtube.com/embed/Ke90Tje7VS0",
@@ -243,10 +243,10 @@
         "Раздел 4: Создание RESTful API"
       ],
       "documentList": [
-        "node_intro.pdf",
-        "express_routing.pdf",
-        "database_integration.pdf",
-        "rest_api.pdf"
+        "https://www.anuragkapur.com/assets/blog/programming/node/PDF-Guide-Node-Andrew-Mead-v3.pdf",
+        "https://pepa.holla.cz/wp-content/uploads/2016/08/Express.js-Guide.pdf",
+        "https://www3.cs.stonybrook.edu/~pfodor/courses/CSE316/L15_NodeJSUsingMySql.pdf",
+        "https://github.com/ifangxiang/books-1/blob/master/%5BNODE%5D%5BPro%20REST%20API%20Development%20with%20Node.js%5D.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/TlB_eWDSMt4",
@@ -282,10 +282,10 @@
         "Раздел 4: Публикация приложений"
       ],
       "documentList": [
-        "flutter_intro.pdf",
-        "flutter_ui.pdf",
-        "state_management.pdf",
-        "app_deployment.pdf"
+        "https://danielggraham.com/wp-content/uploads/2019/12/flutter-lecture-1.pdf",
+        "https://files.rahatbiamooz.ir/downloads/files/madreseh/takmili/pdf/flutter20.pdf",
+        "https://www.theseus.fi/bitstream/handle/10024/355086/Dmitrii_Slepnev.pdf",
+        "https://riunet.upv.es/bitstream/handle/10251/201879/Lahtinen%20-%20Developing%20a%20cross-platform%20mobile%20application%20using%20Flutter.pdf?isAllowed=y&sequence=1"
       ],
       "videoList": [
         "https://www.youtube.com/embed/fq4N0hgOWzU",
@@ -321,10 +321,10 @@
         "Раздел 4: Мониторинг и логирование"
       ],
       "documentList": [
-        "devops_intro.pdf",
-        "ci_cd.pdf",
-        "containerization.pdf",
-        "monitoring_logging.pdf"
+        "https://learning.dell.com/content/dam/dell-emc/documents/en-us/2023KS_Narasimhan-A_Beginner%27s_Handbook_to_DevOps.pdf",
+        "https://codification.io/wp-content/uploads/2023/04/CI-CD-Pipelines-Guide.pdf",
+        "https://blogs.bmc.com/what-is-a-container-containerization-explained/?print-posts=pdf",
+        "https://opensource.com/sites/default/files/gated-content/os_guide_to_devops_monitoring_tools_v2.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/1yKfC43Vt-c",
@@ -360,10 +360,10 @@
         "Раздел 4: Практические задачи"
       ],
       "documentList": [
-        "algorithms_intro.pdf",
-        "data_structures.pdf",
-        "sorting_search.pdf",
-        "practice_tasks.pdf"
+        "https://evil-teacher.on.fleek.co/books/tp/Cormen_Algorithms.pdf",
+        "https://dokumen.pub/download/python-9785937001108.html",
+        "shttps://www.babichev.org/books/AlgoBook.pdf",
+        "https://www.altlinux.org/Images/archive/f/f0/20090719084411%21Python-prakt-02.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/8hly31xKli0",
@@ -399,10 +399,10 @@
         "Раздел 4: Публикация игр"
       ],
       "documentList": [
-        "unity_intro.pdf",
-        "2d_3d_basics.pdf",
-        "gameplay_design.pdf",
-        "game_deployment.pdf"
+        "https://gamehub-cbhe.deusto.es/wp-content/uploads/2016/04/KNTU_local_training_18052017.pdf",
+        "https://library.tsilikin.ru/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/Games/Unity.%20%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE.pdf",
+        "https://eek.ee/download.php?dok=p1d9lc9ad8n381ls3pg5iv6rbgb.pdf&t=kb",
+        "https://elar.uspu.ru/bitstream/uspu/18179/2/2023Belyaev.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/IlKaB1etrik",
@@ -438,10 +438,10 @@
         "Раздел 4: Практические кейсы"
       ],
       "documentList": [
-        "cyber_intro.pdf",
-        "network_security.pdf",
-        "vulnerability_analysis.pdf",
-        "case_studies.pdf"
+        "https://edu-cisco.org/wp-content/uploads/2024/02/1-introduction-to-cybersecurity-ru-2.pdf",
+        "https://elar.urfu.ru/bitstream/10995/73899/3/978-5-7996-2677-8_2019.pdf",
+        "https://www.unodc.org/documents/e4j/Cybercrime/Cybercrime_Module_1_Introduction_to_Cybercrime_RU.pdf",
+        "https://toipkro.ru/content/files/documents/podrazdeleniya/ordo/ciber%20bezopasnost.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/inWWhr5tnEA",
@@ -477,10 +477,10 @@
         "Раздел 4: Практические запросы"
       ],
       "documentList": [
-        "sql_intro.pdf",
-        "database_basics.pdf",
-        "query_examples.pdf",
-        "advanced_sql.pdf"
+        "https://www.andpop.ru/courses/db_books/Forta.pdf",
+        "https://www.r-5.org/files/books/computers/languages/sql/mysql/Alan_Beaulieu-Learning_SQL-RU.pdf",
+        "https://webweb.ams3.cdn.digitaloceanspaces.com/data/simmcdev.webweb.ai.in/MCAdigitalbook/DBMS-20240629T071926Z-001/SQL%20for%20Dummies%20%28%20PDFDrive%20%29.pdf",
+        "https://www.riochierego.it/mobile/docs/quinta/lab/sams_teach_yourself_sql_in_24_hours_5th_edition.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/7S_tz1z_5bA",
@@ -516,10 +516,10 @@
         "Раздел 4: Безопасность в облаке"
       ],
       "documentList": [
-        "cloud_intro.pdf",
-        "aws_azure_gcp.pdf",
-        "deployment_cloud.pdf",
-        "cloud_security.pdf"
+        "https://www.researchgate.net/publication/334151736_Oblacnye_tehnologii",
+        "https://dnevniknauki.ru/images/publications/2024/12/history/Ozdamirova_Magomedova3.pdf",
+        "https://rsue.ru/sveden/files/Oblachnye_i_mobilynye_texnologii_Konspekt_lekciy.pdf",
+        "https://www.researchgate.net/publication/339979131_ANALIZ_PODHODOV_K_OBESPECENIU_BEZOPASNOSTI_OBLACNYH_SERVISOV"
       ],
       "videoList": [
         "https://www.youtube.com/embed/ulprqHHWlng",
@@ -555,10 +555,10 @@
         "Раздел 4: Работа с формами"
       ],
       "documentList": [
-        "angular_intro.pdf",
-        "components_services.pdf",
-        "directives_pipes.pdf",
-        "angular_forms.pdf"
+        "https://angdev.ru/angular/architecture/",
+        "https://ibs-training.ru/kurs/razrabotka_na_angular.html",
+        "https://proweb63.ru/help/angular/ng-cheatsheet",
+        "https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Frameworks_libraries/Angular_getting_started"
       ],
       "videoList": [
         "https://www.youtube.com/embed/3qBXWUpoPHo",
@@ -594,10 +594,10 @@
         "Раздел 4: Практические проекты"
       ],
       "documentList": [
-        "rust_intro.pdf",
-        "rust_syntax.pdf",
-        "memory_management.pdf",
-        "rust_projects.pdf"
+        "https://ejudge.lksh.ru/lang_docs/The%20Rust%20Programming%20Language_ru.pdf",
+        "https://codelibrary.info/books/rust/programmirovanie-na-rust",
+        "https://arxiv.org/abs/2103.15420",
+        "https://raw.githubusercontent.com/kgv/rust_book_ru/gh-pages/converted/rustbook.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/V8KOjpCkJ7I",
@@ -633,10 +633,10 @@
         "Раздел 4: Создание приложений"
       ],
       "documentList": [
-        "csharp_intro.pdf",
-        "csharp_syntax.pdf",
-        "oop_csharp.pdf",
-        "csharp_apps.pdf"
+        "https://lesmatveev.narod.ru/knigi_proect/ci_sharp.pdf",
+        "https://publications.hse.ru/pubs/share/folder/uao4wji8kw/167588220.pdf",
+        "https://glebradchenko.susu.ru/courses/bachelor/oop/OOP-PrePrint.pdf",
+        "https://cchgeu.ru/upload/iblock/e2b/1xoe5gsiykx341s0t089to4coelvhaoq/UP-po-distsipline-RazrabPrilVVS.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/GhQdlIFylQ8",
@@ -672,10 +672,10 @@
         "Раздел 4: Разработка приложений"
       ],
       "documentList": [
-        "java_intro.pdf",
-        "java_syntax.pdf",
-        "collections.pdf",
-        "java_apps.pdf"
+        "https://campus.epam.com/static/news/Books/Ihar_Blinou.Java.from.EPAM.v2.2021.pdf",
+        "https://campus.epam.com/static/news/Books/Ihar_Blinou.Java.Industrial_programming.2007.pdf",
+        "https://www.gov.kz/uploads/2020/10/8/8780051b28de35ac338890ceab9af09f_original.7553729.pdf",
+        "https://codelibrary.info/books/java/programmiruem-na-java"
       ],
       "videoList": [
         "https://www.youtube.com/embed/grEKMHGYyns",
@@ -711,10 +711,10 @@
         "Раздел 4: Создание приложений"
       ],
       "documentList": [
-        "go_intro.pdf",
-        "go_syntax.pdf",
-        "goroutines.pdf",
-        "go_apps.pdf"
+        "https://ru.hexlet.io/courses/go-basics",
+        "https://ru.hexlet.io/courses/go-basics",
+        "https://ru.hexlet.io/courses/go-basics",
+        "https://ru.hexlet.io/courses/go-basics"
       ],
       "videoList": [
         "https://www.youtube.com/embed/YS4e4q9oBaU",
@@ -750,10 +750,10 @@
         "Раздел 4: Контейнеризация и оркестрация"
       ],
       "documentList": [
-        "spring_intro.pdf",
-        "rest_api.pdf",
-        "microservices.pdf",
-        "containerization.pdf"
+        "https://api.pageplace.de/preview/DT0400.9785970609712_A48656223/preview-9785970609712_A48656223.pdf",
+        "https://github.com/mrbajaj/books/blob/master/Spring%20Microservices%20in%20Action.pdf",
+        "https://habr.com/ru/articles/682720/",
+        "https://www.milandr.ru/upload/iblock/674/a4v8xil70mt4elh79995fvnrv0xtp93o/О_клиенте_и_сервере_в_микросервисной_архитектуре_Хабр_22.06.2021.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/vtPkZShrvXQ",
@@ -789,10 +789,10 @@
         "Раздел 4: Практические приложения"
       ],
       "documentList": [
-        "ai_intro.pdf",
-        "neural_networks.pdf",
-        "model_training.pdf",
-        "ai_applications.pdf"
+        "https://is.ifmo.ru/books/A_Wild_Electric_Sheep_Chase_vol_1.pdf",
+        "https://is.ifmo.ru/books/A_Wild_Electric_Sheep_Chase_vol_2.pdf",
+        "https://ru.wikipedia.org/wiki/Искусственный_интеллект",
+        "https://ru.wikipedia.org/wiki/Охота_на_электроовец._Большая_книга_искусственного_интеллекта"
       ],
       "videoList": [
         "https://www.youtube.com/embed/2ePf9rue1Ao",
@@ -828,10 +828,10 @@
         "Раздел 4: Практические кейсы"
       ],
       "documentList": [
-        "nlp_intro.pdf",
-        "nltk_guide.pdf",
-        "text_analysis.pdf",
-        "nlp_cases.pdf"
+        "https://tjzhifei.github.io/resources/NLTK.pdf",
+        "https://github.com/NLGRF/NLP-Tutorial-3---Extract-Text-from-PDF-Files-in-Python-for-NLP-PDF-and-Writer-Reader-in-Python/blob/master/Working%20with%20Text%20and%20PDF%20Files%20in%20Python%20for%20NLP.ipynb",
+        "https://stackabuse.com/python-for-nlp-working-with-text-and-pdf-files/",
+        "https://www.youtube.com/watch?v=_VSX7yd-zPE"
       ],
       "videoList": [
         "https://www.youtube.com/embed/NpEKl7D0pzk",
@@ -867,10 +867,10 @@
         "Раздел 4: Развёртывание проекта"
       ],
       "documentList": [
-        "django_intro.pdf",
-        "django_apps.pdf",
-        "django_database.pdf",
-        "django_deployment.pdf"
+        "https://dokumen.pub/django-21-web-python-9785977540582-5977540582.html",
+        "https://cv2.litres.ru/get_pdf_trial/70297321.pdf",
+        "https://library-it.com/wp-content/uploads/2021/04/forse_d_bisseks_p_chan_u_django.pdf",
+        "https://ilmiyanjumanlar.uz/uploads/conferences/0017/5-7.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/F5mRW0jo-U4",
@@ -906,10 +906,10 @@
         "Раздел 4: Разработка приложений"
       ],
       "documentList": [
-        "rails_intro.pdf",
-        "ruby_basics.pdf",
-        "mvc_architecture.pdf",
-        "rails_apps.pdf"
+        "https://edu.anarcho-copy.org/Programming%20Languages/Ruby/ruby-rails-tutorial-learn-web-development-6th.pdf",
+        "https://gist.github.com/beorc/183805c9c31f0501a1342b7d1765f364",
+        "https://www.softcover.io/books/db8803f7/ruby_on_rails_tutorial_3rd_edition_russian",
+        "https://learn-rails.com/products/learn-rails-2.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/fmyvWz5TUWg",
@@ -945,10 +945,10 @@
         "Раздел 4: Разработка веб-приложений"
       ],
       "documentList": [
-        "php_intro.pdf",
-        "php_syntax.pdf",
-        "php_database.pdf",
-        "php_apps.pdf"
+        "https://cs.petrsu.ru/~kulakov/courses/php/lectures/1.intro.pdf",
+        "https://assets.ctfassets.net/nkydfjx48olf/5qFMF3mvitLMahX67i7iOb/028229996c13cbc27a0538f055a41b46/php_cookbook.pdf",
+        "https://andpop.ru/courses/db_books/Maklafin.pdf",
+        "https://cchgeu.ru/upload/iblock/7f4/zmkgstei9w6ygchik4pdvzmse24hbqwm/Razrabotka-web_resursa.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/OK_JCtrrv-c",
@@ -984,10 +984,10 @@
         "Раздел 4: Разработка Android-приложений"
       ],
       "documentList": [
-        "kotlin_intro.pdf",
-        "kotlin_syntax.pdf",
-        "oop_kotlin.pdf",
-        "android_apps.pdf"
+        "https://kotlinlang.org/docs/kotlin-pdf.html",
+        "https://codelibrary.info/books/kotlin/programmirovanie-na-kotlin-dlya-android",
+        "https://ftp.zhirov.kz/books/IT/Kotlin/Волшебство%20Kotlin%20(Пьер-%D0%98%D0%B2%20Сомон).pdf",
+        "https://metanit.com/kotlin/tutorial/"
       ],
       "videoList": [
         "https://www.youtube.com/embed/2cKIFcH45yk",
@@ -1023,10 +1023,10 @@
         "Раздел 4: Разработка приложений"
       ],
       "documentList": [
-        "swift_intro.pdf",
-        "swift_syntax.pdf",
-        "ios_sdk.pdf",
-        "swift_apps.pdf"
+        "https://coddyschool.com/upload/Swift_Osnovy_razrabotki_prilozheniy_pod_iOS.pdf",
+        "https://ru.scribd.com/document/579825915/Конспект-IOS-Swift",
+        "https://www.youtube.com/watch?v=jcqZEgiQsZY",
+        "https://www.youtube.com/watch?v=DSjAStuASUk"
       ],
       "videoList": [
         "https://www.youtube.com/embed/6OSiC3HDbSU",
@@ -1062,10 +1062,10 @@
         "Раздел 4: Публикация проектов"
       ],
       "documentList": [
-        "arvr_intro.pdf",
-        "dev_tools.pdf",
-        "interactive_experience.pdf",
-        "project_deployment.pdf"
+        "https://ikatids38.ru/images/it/vrdop.pdf",
+        "https://www.researchgate.net/publication/359290021_Tehnologii_virtualnoj_i_dopolnennoj_realnosti_v_obrazovatelnom_processe",
+        "https://lncc.br/~jauvane/papers/RelatorioTecnicoLNCC-2503.pdf",
+        "https://modumlab.com/uploads/presentation/1573504497.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/88Rc3W9IJvY",
@@ -1101,10 +1101,10 @@
         "Раздел 4: Практические кейсы"
       ],
       "documentList": [
-        "blockchain_intro.pdf",
-        "crypto_basics.pdf",
-        "smart_contracts.pdf",
-        "blockchain_cases.pdf"
+        "https://eec.eaeunion.org/upload/medialibrary/71f/Doklad_FINAL.pdf",
+        "https://www.digital-energy.ru/wp-content/uploads/2019/12/smart-contracts.pdf",
+        "https://jraic.com/temp/910a2daa85f2040502ad84b8923c39cc.pdf",
+        "https://cchgeu.ru/upload/iblock/513/b9d8i467v33vj6c6zjw950r7vm0a8r1i/MU_Blockchain_tekhnologii_Prakt_BAK_INN.pdf"
       ],
       "videoList": [
         "https://www.youtube.com/embed/SSo_EIwHSd4",
@@ -1139,11 +1139,11 @@
         "Раздел 3: Инструменты прототипирования",
         "Раздел 4: Практические проекты"
       ],
-      "documentList": [
-        "uiux_intro.pdf",
-        "design_principles.pdf",
-        "prototyping_tools.pdf",
-        "uiux_projects.pdf"
+       "documentList": [
+        "https://edu.mmcs.sfedu.ru/mod/resource/view.php?forceview=1&id=23782",
+        "https://mospolytech.ru/sveden/files/B1.2.8_UI-UX-dizayn%281%29.pdf",
+        "https://coddyschool.com/upload/files/program_Figma.pdf",
+        "https://www.uprock.ru/education"
       ],
       "videoList": [
         "https://www.youtube.com/embed/Naw6B0YlOuo",
