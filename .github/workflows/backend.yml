@@ -46,7 +46,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-              docker build -f ./lms_backend/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/lms-backend:latest .
+              docker build -f ./Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/lms-backend:latest .
 
       - name: Push Docker image
         run: |
